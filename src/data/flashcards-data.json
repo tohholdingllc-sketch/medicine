@@ -1,0 +1,1591 @@
+{
+  "meta": {
+    "titolo": "Batteriologia — Schede Batteri",
+    "fonte": "Banche – Cuffini, II Anno (a.a. 2020/2021)",
+    "lingua": "it",
+    "descrizione": "Fronte carta = nome del batterio. Retro = tutte le informazioni per rispondere."
+  },
+  "gruppi": [
+    { "id": "gram-pos", "nome": "Gram +", "colore": "violet" },
+    { "id": "gram-pos-spore", "nome": "Gram + sporigeni", "colore": "indigo" },
+    { "id": "gram-neg", "nome": "Gram -", "colore": "rose" }
+  ],
+  "cards": [
+    {
+      "id": "staphylococcus",
+      "nome": "Staphylococcus (genere)",
+      "gruppo": "gram-pos",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Gram +",
+          "Cocchi, diametro 0,5–1 micron",
+          "Disposti a grappolo",
+          "Immobili",
+          "Aerobi/anaerobi facoltativi",
+          "T° di crescita 10–45 °C, optimum 30–37 °C",
+          "pH 4–9, optimum 7–7,5",
+          "Alofili (NaCl al 10%)",
+          "Catalasi +",
+          "Coagulasi: + = S. aureus; - = 32 specie (16 causano infezioni, tra cui S. epidermidis)",
+          "Acidi teicoici: poliribitolfosfati → S. aureus; poliglicerolfosfati → S. epidermidis",
+          "Abbondante produzione di glicocalice"
+        ]}
+      ]
+    },
+    {
+      "id": "staphylococcus-aureus",
+      "nome": "Staphylococcus aureus",
+      "gruppo": "gram-pos",
+      "sezioni": [
+        { "titolo": "Tossine ad azione non specifica", "punti": [
+          "Azione tossica generalizzata, causano infezioni suppurative",
+          "Emolisine (α, β, γ, δ): azione litica verso gli eritrociti",
+          "Leucocidine di Panton-Valentine: target i leucociti"
+        ]},
+        { "titolo": "Tossine ad azione specifica", "punti": [
+          "Enterotossine: molto varie antigenicamente (siglate con lettere), termoresistenti e resistenti a enzimi proteolitici; azione sia emetica che tossica",
+          "Tossina della sindrome da shock tossico (enterotossina F)",
+          "Tossina esfoliativa"
+        ]},
+        { "titolo": "Esoenzimi", "punti": [
+          "Coagulasi: si lega al fattore CRF e trasforma fibrinogeno in fibrina, che maschera i siti antigenici del batterio",
+          "Ialuronidasi: depolimerizza l'acido ialuronico del connettivo → fattore di diffusione",
+          "Stafilochinasi (fibrinolisina): attacca i coaguli di fibrina in eccesso e permette la diffusione",
+          "Proteasi, lipasi (vive in zone ricche di sebo), esterasi, DNAsi",
+          "Catalasi: scinde il perossido d'idrogeno → resiste alla fagocitosi"
+        ]},
+        { "titolo": "Patologie da tossine", "punti": [
+          "Intossicazione alimentare: da cibo contaminato dalla tossina (carne lavorata, soprattutto pasticceria); sintomi dopo 1–6 h (vomito, nausea, dolori addominali), NO febbre; solo il 30–35% degli aurei la produce. Terapia: anticorpi neutralizzanti, non antibiotici",
+          "Sindrome da shock tossico (TSS): enterotossina F (termolabile); vomito, febbre, eruzione cutanea eritematosa maculare, ipotensione, shock ipovolemico, rischio insufficienza multiorgano. Terapia antibiotica mirata",
+          "Sindrome di Ritter / cute ustionata (SSSS): tossina esfoliativa che attacca lo strato granuloso dell'epidermide → distacco degli strati superficiali; forma localizzata = impetigine bollosa. Terapia antibiotica mirata"
+        ]},
+        { "titolo": "Altre patologie", "punti": [
+          "Cute e annessi: follicoliti, orzaiolo, foruncoli, favi, bolle, vescicole, piodermiti, mastite, infezioni di ferite chirurgiche e ustioni",
+          "Infezioni ematogene: batteriemie, setticemie con possibili endocarditi, osteomieliti/artriti settiche",
+          "Infezioni respiratorie: polmoniti, empiemi pleurici, ascessi polmonari"
+        ]},
+        { "titolo": "Diagnosi", "punti": [
+          "Osservazione microscopica diretta",
+          "Semina su Mannitol Salt Agar (MSA): selettivo (sale → elimina i non alofili) e differenziale (il mannitolo è fermentato solo dall'aureus, che vira il terreno da rosso a giallo; l'epidermidis cresce ma non vira)",
+          "Identificazione biochimica (es. API system)",
+          "Antibiogramma indispensabile: forte resistenza da beta-lattamasi o modifica delle PBP"
+        ]},
+        { "titolo": "Terapia", "punti": [
+          "Antibiotici recenti",
+          "Glicopeptidi (teicoplanina, vancomicina)",
+          "Carbapenemici",
+          "Inibitori suicidi + penicilline (Augmentin)",
+          "Nuovi macrolidi (soprattutto per infezioni respiratorie)"
+        ]}
+      ]
+    },
+    {
+      "id": "staphylococcus-epidermidis",
+      "nome": "Staphylococcus epidermidis",
+      "gruppo": "gram-pos",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Mannitolo –",
+          "Cresce su cute e mucose",
+          "Produce più glicocalice dell'aureus",
+          "Patogeno da quando si usa molto materiale inerte in ambito ospedaliero: aderisce bene a queste strutture",
+          "Porta a infezioni urinarie (cateteri) ed endocarditi (valvole protesiche)"
+        ]}
+      ]
+    },
+    {
+      "id": "streptococcus",
+      "nome": "Streptococcus (genere)",
+      "gruppo": "gram-pos",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Gram +",
+          "Disposizione a catenella (strepto = catenella)",
+          "1–1,5 micron, immobili e privi di flagelli",
+          "Molto diffusi, fanno parte della normale flora microbica",
+          "Necessitano terreni ricchi: agar sangue, agar siero, agar cioccolato",
+          "Asporigeni, possono avere capsula secondo la specie",
+          "Catalasi negativi, ossidasi negativi"
+        ]},
+        { "titolo": "Classificazione per emolisi", "punti": [
+          "α-emolisi: parziale → alone bruno-verdastro",
+          "β-emolisi: totale → alone chiaro/trasparente",
+          "γ-emolisi: nessuna attività emolitica"
+        ]},
+        { "titolo": "Classificazione di Lancefield", "punti": [
+          "Basata sulla composizione antigenica della parete: carboidrati (polisaccaride / sostanza C) e acidi teicoici",
+          "Gruppi: A–H, K–M, O–V"
+        ]},
+        { "titolo": "American system", "punti": [
+          "Solo per streptococchi capsulati; valuta gli antigeni polisaccaridici della capsula",
+          "S. pneumoniae → 90 sierotipi"
+        ]},
+        { "titolo": "Parete", "punti": [
+          "Peptidoglicano + acidi teicoici",
+          "Proteina M (60 sierotipi) → associata a virulenza",
+          "Proteina T (20 sierotipi) → non associata a virulenza",
+          "Proteine R-B → mascherano gli antigeni della proteina M"
+        ]},
+        { "titolo": "Fattori di virulenza — esotossine", "punti": [
+          "Streptolisina S: stabile all'ossigeno, attività emolitica con lisi totale (abbondante nei β-emolitici)",
+          "Streptolisina O: inattivata dall'ossigeno, ruolo antigenico (produciamo anticorpi contro di essa)",
+          "Solo gruppo A: esotossine pirogeniche (rialzo febbrile, citotossiche)"
+        ]},
+        { "titolo": "Fattori di virulenza — esoenzimi e fattori batterici", "punti": [
+          "Esoenzimi: NADasi, ialuronidasi (il più importante, fattore di diffusione), DNAasi, streptochinasi",
+          "Proteina M: associata ad acido lipoteicoico, supera la capsula; antifagocitaria; super-antigene; funge da adesina",
+          "Capsula, polisaccaride C, emolisina",
+          "Antigeni con reattività crociata (cuore e glomeruli renali → risposta immunitaria crociata)",
+          "Recettori Fc delle IgG"
+        ]}
+      ]
+    },
+    {
+      "id": "streptococcus-pyogenes",
+      "nome": "Streptococcus pyogenes",
+      "gruppo": "gram-pos",
+      "sezioni": [
+        { "titolo": "Caratteristiche generali", "punti": [
+          "β-emolitico, gruppo A",
+          "0,5–1,0 micron, capsulato",
+          "Anaerobio facoltativo"
+        ]},
+        { "titolo": "Infezioni respiratorie", "punti": [
+          "Spesso faringotonsilliti",
+          "Complicazioni locali: ascessi tonsillari e peri-tonsillari",
+          "Estensione a siti vicini: otiti medie, mastoiditi, sinusiti, laringotracheiti, bronchiti, broncopolmoniti",
+          "Estensione generale: sepsi, setticemie, febbre puerperale"
+        ]},
+        { "titolo": "Scarlattina", "punti": [
+          "Malattia esantematica con febbre e tipica lingua a fragola",
+          "Da tossine pirogeniche in circolo",
+          "Sempre preceduta da faringotonsillite; per conversione fagica il batterio produce le tossine",
+          "Si manifesta ~10 giorni dopo la faringotonsillite (l'antibiotico elimina il batterio ma la tossina resta)"
+        ]},
+        { "titolo": "Sequele post-streptococciche", "punti": [
+          "Solo nel 3% dei casi di faringotonsillite trascurata/mal-curata",
+          "Febbre/malattia reumatica: autoimmune, non suppurativa; alterazioni infiammatorie a cuore (pancardite), grosse articolazioni e vasi; da immunocomplessi antigene-anticorpo",
+          "Glomerulonefrite acuta: autoimmune, non suppurativa; gli anticorpi interagiscono con una glicoproteina della membrana del glomerulo; danni soprattutto ai capillari"
+        ]},
+        { "titolo": "Infezioni cutanee/sottocutanee", "punti": [
+          "Piodermite (impetigine): vescicole → pustole → croste",
+          "Erisipela: infiammazione della cute che si espande al derma, eritematosa a viso, capo, arti inferiori",
+          "Infezioni di ferite con rapida formazione di pus",
+          "Cellulite: cute e sottocute con dolore, gonfiore ed eritema",
+          "Fascite necrotizzante (gangrena streptococcica): evoluzione della cellulite al tessuto muscolare e adiposo (batteri 'carnivori')"
+        ]},
+        { "titolo": "Terapia", "punti": [
+          "Penicillina = farmaco d'elezione",
+          "Eritromicina e cefalosporine per allergici alla penicillina"
+        ]}
+      ]
+    },
+    {
+      "id": "streptococcus-agalactiae",
+      "nome": "Streptococcus agalactiae",
+      "gruppo": "gram-pos",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "γ e β emolitico, gruppo B",
+          "11 sierotipi (I, III, IV i più patogeni)",
+          "Commensale del tratto intestinale, urogenitale femminile, uretra maschile"
+        ]},
+        { "titolo": "Patologie negli animali", "punti": [
+          "Mastiti (infezione ghiandola mammaria) nei bovini"
+        ]},
+        { "titolo": "Meningite neonatale (uomo)", "punti": [
+          "Non patogeno per la donna ma per il bambino; presente in 1/3 delle colture vaginali",
+          "Se la donna è positiva → chemioprofilassi",
+          "Forma precoce: a 48 h dal parto, polmoni + batteriemia + meningite, 5% mortalità, sequele neurologiche importanti",
+          "Forma tardiva: a 1–2 mesi dal parto, meningite purulenta; sopravvivenza più alta ma possibili sequele se non curata"
+        ]}
+      ]
+    },
+    {
+      "id": "streptococchi-orali",
+      "nome": "Streptococchi orali",
+      "gruppo": "gram-pos",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "γ e α emolitici",
+          "Specie: S. mutans, S. mitis, S. sanguis, S. salivarius"
+        ]},
+        { "titolo": "S. mutans", "punti": [
+          "Usa polisaccaridi (destrani, levani) e li sintetizza in saccarosio",
+          "Alimenta la genesi della carie: accumulo di zuccheri e formazione della placca dentaria"
+        ]},
+        { "titolo": "Altri", "punti": [
+          "Dopo interventi al cavo orale possono entrare in circolo → setticemia; deposito su valvole cardiache → endocardite"
+        ]}
+      ]
+    },
+    {
+      "id": "enterococchi",
+      "nome": "Enterococchi",
+      "gruppo": "gram-pos",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "γ e α emolitici; 16 specie (le principali: E. faecalis, E. faecium)",
+          "Alofili (crescono in NaCl al 6%)",
+          "Tollerano T° vicino ai 45 °C e pH 9,5",
+          "Crescono bene anche con bile al 40%"
+        ]},
+        { "titolo": "Patologia", "punti": [
+          "Commensali del tratto intestinale",
+          "Per batteriemia: infezioni urinarie, infezioni apparato genitale femminile, endocarditi (valvole cardiache)"
+        ]},
+        { "titolo": "Terapia", "punti": [
+          "Unici resistenti ai farmaci → sempre antibiogramma"
+        ]},
+        { "titolo": "Diagnosi (streptococchi/enterococchi)", "punti": [
+          "Campioni: faringeo, pus, sangue o siero",
+          "Colorazione di Gram (G+ → cristal violetto)",
+          "Coltura: semina su agar-sangue a 37 °C",
+          "Test di sensibilità alla bacitracina (positivo solo per S. pyogenes)",
+          "Identificazione biochimica",
+          "Antibiogramma: necessario solo per gli enterococchi",
+          "Sierologia: titolo antistreptolisinico (ASLO) → alto = infezione recente; utile in caso di sequele"
+        ]}
+      ]
+    },
+    {
+      "id": "streptococcus-pneumoniae",
+      "nome": "Streptococcus pneumoniae",
+      "gruppo": "gram-pos",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "α e β emolisi (secondo l'ossigenazione)",
+          "Non classificabile secondo Lancefield",
+          "0,5–0,7 micron, capsulato, aerobio/anaerobio facoltativo",
+          "Diplococchi, richiede terreni ricchi",
+          "Colonie su terreni solidi: R (rugose, senza capsula), S (lisce, con capsula), M (mucose)",
+          "Produce autolisina; solubile in presenza di bile"
+        ]},
+        { "titolo": "Sierotipi", "punti": [
+          "90 sierotipi in base ai polisaccaridi di membrana",
+          "1–23 (bassi): maggior potere patogeno, capsulati",
+          "24–90 (alti): minor potere patogeno"
+        ]},
+        { "titolo": "Fattori di virulenza", "punti": [
+          "Pneumolisina: responsabile dell'emolisi (aerobiosi → α; anaerobiosi → β)",
+          "Neuraminidasi: attacca glicoproteine e glicolipidi di membrana → il batterio si fa strada"
+        ]},
+        { "titolo": "Patologia — polmonite lobare pneumococcica", "punti": [
+          "Presente nel tratto respiratorio del 30–70% dei sani; patogeno solo se capsulato",
+          "Si verifica per calo delle difese immunitarie (immunodepressione)",
+          "Patogenesi: colonizza l'orofaringe → penetra vie respiratorie inferiori → moltiplica nei bronchioli → infezione alveolare → polmonite a un lobo → essudato alveolare (edema) → con la tosse si diffonde all'altro lobo",
+          "NO necrosi tissutale",
+          "Nel 25–30% dei casi: otite, meningite, endocardite/pericardite; con batteriemia → setticemia"
+        ]},
+        { "titolo": "Diagnosi", "punti": [
+          "Campione d'elezione: espettorato",
+          "Colorazione di Gram; semina su agar sangue e analisi dell'emolisi",
+          "Test di solubilità alla bile (10% desossicolato di sodio → lisi e brodo limpido in 15–20 min)",
+          "Test di sensibilità all'optochina (alone di inibizione dopo 18–24 h a 37 °C)",
+          "Prova di rigonfiamento capsulare (Quellung test): antisiero polivalente + blu di metilene; capsula gonfia al M.O.; si prosegue con antisieri specifici → fini epidemiologici"
+        ]}
+      ]
+    },
+    {
+      "id": "corynebacterium",
+      "nome": "Corynebacterium (genere)",
+      "gruppo": "gram-pos",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Gram +, forma a clava, lunghezza fino a 5 micron",
+          "Aerobi, non emolitici",
+          "Patogeni per animali e piante, alcuni saprofiti",
+          "Presenti nella normale flora dell'uomo"
+        ]}
+      ]
+    },
+    {
+      "id": "corynebacterium-diphtheriae",
+      "nome": "Corynebacterium diphtheriae",
+      "gruppo": "gram-pos",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Immobile, asporigeno, privo di capsula",
+          "Per i glicolipidi di parete assume forme a «V», «L», «Y»",
+          "Accumula granuli di Babes-Ernst (non indice di patogenicità)",
+          "Colorazione di Albert (blu di toluidina + verde di malachite): batteri verdi/blu-verde, granuli blu/neri"
+        ]},
+        { "titolo": "Antigeni", "punti": [
+          "Antigene somatico O: polisaccaridico, profondo, legato al peptidoglicano tramite acido corynemicolico/corynemicolenico; solo nel C. diphtheriae",
+          "Antigene K: proteico, superficiale",
+          "Antigene micolico (fattore cordale): glicolipidico, legato all'acido corynemicolico → non separazione dei corpi cellulari"
+        ]},
+        { "titolo": "Coltivazione", "punti": [
+          "Terreni arricchiti con siero o sangue (per differenziarli dagli streptococchi emolitici)",
+          "Selettivi: agar sangue con tellurito di potassio (inibisce gli altri; il coryne lo trasforma in tellurio metallico → colonie nerastre)",
+          "McLeod's (agar cioccolato + tellurito 0,03–0,04%): dopo 24–48 h a 37 °C → colonie gravis, intermedie, mitis"
+        ]},
+        { "titolo": "Esotossina difterica", "punti": [
+          "Identifica i batteri come patogeni; tossina pantropa (agisce su ogni cellula con recettori)",
+          "Dimerica, due peptidi con ponti S-S divisi dalla tripsina: frammento B (recettoriale, eparina), frammento A (tossico, ADP-ribosilante)",
+          "Meccanismo: stacca l'ADP dal NAD → l'ADP lega l'EF2 → complesso EF2+ADP inattivo → blocco della sintesi proteica",
+          "Produzione dipendente dal ferro; necessario il gene tox inserito per conversione fagica"
+        ]},
+        { "titolo": "Analisi biochimica", "punti": [
+          "Glucosio +, saccarosio +, fosfatasi -"
+        ]}
+      ]
+    },
+    {
+      "id": "corynebacterium-non-difterici",
+      "nome": "Corynebacterium non difterici",
+      "gruppo": "gram-pos",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Corynebacterium che colonizzano le alte vie respiratorie ma non coincidono con il difterico"
+        ]},
+        { "titolo": "Analisi biochimica", "punti": [
+          "Destrosio +, maltosio +, fosfatasi -, ureasi -"
+        ]}
+      ]
+    },
+    {
+      "id": "difterite",
+      "nome": "Difterite (patologia di C. diphtheriae)",
+      "gruppo": "gram-pos",
+      "sezioni": [
+        { "titolo": "Sintomi", "punti": [
+          "Diffusione solo interumana per via aerea, si localizza nelle alte vie respiratorie",
+          "Il batterio non è invasivo ma si moltiplica localmente",
+          "Localmente: pseudomembrane (fibrina, cellule morte, leucociti, eritrociti, batteri), difficili da rimuovere → possibile soffocamento",
+          "Generale: febbre, ingrossamento ghiandole del distretto",
+          "Il problema è la tossina in circolo → danneggia reni, fegato, ghiandole surrenali, SNC",
+          "Altre sedi: ferite in tempo di guerra, cordone ombelicale"
+        ]},
+        { "titolo": "Diagnosi", "punti": [
+          "Campioni da tamponi sulle pseudomembrane",
+          "Esame microscopico con semina su agar sangue e agar tellurito",
+          "Test di tossinogenesi (in vitro, in coltura, PCR); il più usato: test di Elek-Frobisher (immunoprecipitazione in agar tellurito): controllo positivo, negativo e campione; striscia con anticorpi → baffi di precipitazione dopo 24–48 h"
+        ]},
+        { "titolo": "Terapia", "punti": [
+          "Simultanea: antibiotici (senza, si produce altra tossina) + anticorpi/sieroterapia (elimina la tossina in circolo)",
+          "La malattia conferisce immunità solida e duratura"
+        ]},
+        { "titolo": "Vaccino", "punti": [
+          "Obbligatorio, entro il primo anno con richiamo a 6–8 anni",
+          "Vaccinazione trivalente DPT (difterite, pertosse, tetano)",
+          "Anatossina ottenuta con glutaraldeide al 3‰"
+        ]}
+      ]
+    },
+    {
+      "id": "listeria-monocytogenes",
+      "nome": "Listeria monocytogenes",
+      "gruppo": "gram-pos",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Gram +, asporigeno",
+          "Mobile a 20–25 °C, perde motilità a 37 °C",
+          "Aerobio–anaerobio facoltativo, alofilo, psicrofilo (riproduce a 4 °C)",
+          "Risiede nel tratto gastrointestinale di molti animali; 10% della popolazione portatore sano",
+          "Opportunista, catalasi +"
+        ]},
+        { "titolo": "Classificazione", "punti": [
+          "13 sierotipi in base agli acidi lipoteicoici",
+          "Ia, Ib, IVb i più frequenti",
+          "IVb associato a latto-caseari poco pastorizzati o verdure mal lavate"
+        ]},
+        { "titolo": "Listeriosi — infezione", "punti": [
+          "Animali (suini, ovini, bovini, polli): una volta fagocitato, essendo catalasi +, passa da cellula a cellula evitando anticorpi, complemento e neutrofili",
+          "Uomo — via alimentare (formaggi, carni poco cotte, vegetali crudi, acqua), via professionale (contatto con animale infetto), durante la gravidanza (transplacentare o canale del parto)"
+        ]},
+        { "titolo": "Forme", "punti": [
+          "Gastroenterite diarroica: entro poche ore, rialzo febbrile, dolori addominali, diarrea",
+          "Listeriosi sistemica/invasiva: dopo 30–40 giorni, il batterio passa dall'intestino al sangue"
+        ]},
+        { "titolo": "Sintomi della forma invasiva", "punti": [
+          "SNC: meningite (la più frequente, neonati/anziani/immunocompromessi), encefaliti, meningo-encefaliti, raramente ascessi cerebrali",
+          "Setticemie con forme ascessuali o granulomatose (SNC, fegato, milza)",
+          "Localizzate: oculari (congiuntivite purulenta), linfoghiandolari (fistole e pus), cutanee (papule ed esantemi che ulcerano)",
+          "In gravidanza: sindrome simil-influenzale; dal 3° trimestre trasmissione al feto → aborto, nascita prematura, granulomatosi infantisettica con polmonite, listeriomi, morte per insufficienza circolatoria/respiratoria"
+        ]},
+        { "titolo": "Diagnosi e terapia", "punti": [
+          "Campione seminato su agar tenuto a 4 °C (favorisce la crescita)",
+          "Test di motilità, identificazione biochimica",
+          "Terapia: ampicillina"
+        ]}
+      ]
+    },
+    {
+      "id": "lactobacillus",
+      "nome": "Lactobacillus",
+      "gruppo": "gram-pos",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Gram +, asporigeno, immobili",
+          "Aerobi–anaerobi facoltativi",
+          "Zucchero-fermentanti: acido piruvico → acido lattico",
+          "Utili alla decomposizione di vegetali/frutti e alla fermentazione di prodotti caseari",
+          "Specie: acidophilus, casei, fermentum"
+        ]},
+        { "titolo": "Classificazione", "punti": [
+          "Omofermentanti: convertono tutti gli zuccheri al 100% in acido lattico",
+          "Eterofermentanti: convertono il glucosio al 40% in acido lattico, poi alcol, acido acetico e CO2"
+        ]},
+        { "titolo": "Localizzazione", "punti": [
+          "Vaginale: abbassano il pH a 3,5–4,5 fermentando il glicogeno delle cellule della mucosa; impediscono la crescita di altri microrganismi; se mancano → vaginiti",
+          "Orale: non responsabili della carie ma tendono a supportarla"
+        ]},
+        { "titolo": "Patogenicità e terapia", "punti": [
+          "Molto scarsa; per batteriemia possono causare setticemia, endocarditi o ascessi",
+          "Nessuna particolare resistenza"
+        ]}
+      ]
+    },
+    {
+      "id": "bacillus",
+      "nome": "Bacillus (genere)",
+      "gruppo": "gram-pos-spore",
+      "sezioni": [
+        { "titolo": "Generalità", "punti": [
+          "Gram +, mobili o immobili",
+          "Aerobi obbligati",
+          "Ubiquitari: suolo, acqua, flora intestinale di uomo e animali",
+          "Facilmente coltivabili"
+        ]}
+      ]
+    },
+    {
+      "id": "bacillus-anthracis",
+      "nome": "Bacillus anthracis",
+      "gruppo": "gram-pos-spore",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Gram +, immobile, aerobio",
+          "Forma bacillare con estremità tronche, endospora",
+          "Sporigeno (spore resistenti a calore, essiccamento, disinfettanti), spore visibili sul terreno",
+          "Ubiquitario e saprofito",
+          "Terreni solidi → caput medusae; terreni liquidi → abete rovesciato"
+        ]},
+        { "titolo": "Fattori di virulenza", "punti": [
+          "Esoenzimi: fosfolipasi-C, proteinasi, collagenasi",
+          "Plasmide pOX1 → tossina carbonchiosa: fattore I (EF, edematogeno, adenilato ciclasi → edema), fattore II (PA, antigene protettivo, media l'ingresso degli altri due), fattore III (LF, letale, metalloproteasi che degrada le MAP-chinasi → morte cellulare)",
+          "Plasmide pOX2 → capsula ad azione antifagocitaria"
+        ]},
+        { "titolo": "Carbonchio/antrace (zoonosi) — animali", "punti": [
+          "Colpisce prevalentemente erbivori",
+          "Causa setticemia, emorragia, splenomegalia; presente un vaccino"
+        ]},
+        { "titolo": "Carbonchio — uomo, trasmissione cutanea (95%)", "punti": [
+          "1–7 gg di incubazione, contatto diretto",
+          "Patogenesi: edema → pustola → escara necrotica → pustole satelliti",
+          "80% guariti, 20% setticemia; diagnosi per osservazione della lesione"
+        ]},
+        { "titolo": "Carbonchio — via aerea (rara)", "punti": [
+          "Incubazione ≥ 2 mesi, contatto per inalazione",
+          "Patogenesi: inalazione e fagocitosi della spora dai macrofagi alveolari → linfonodi mediastinici → focolai di broncopolmonite → circolo",
+          "Febbre, edema, mediastinite emorragica, sepsi; 95% morte per shock settico; diagnosi per coltura su terreni non selettivi"
+        ]},
+        { "titolo": "Carbonchio — gastrointestinale (rarissima)", "punti": [
+          "2–7 gg di incubazione, ingestione alimentare",
+          "Patogenesi: spora via microlesioni intestinali → sangue e linfa → linfoadenopatia, setticemia, edema, sepsi, a volte meningite",
+          "> 90% morte; diagnosi analoga alla via aerea"
+        ]},
+        { "titolo": "Terapia e vaccino", "punti": [
+          "Penicillina; chinoloni per ceppi resistenti; siero anticarbonchio nelle setticemie gravi",
+          "Vaccino efficace nel 93%, non obbligatorio ma consigliato nelle regioni endemiche"
+        ]}
+      ]
+    },
+    {
+      "id": "bacillus-cereus",
+      "nome": "Bacillus cereus",
+      "gruppo": "gram-pos-spore",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Gram +, mobile, aerobio",
+          "Cresce su terreni semplici, emolitico su agar-sangue",
+          "Non ordinato come l'anthracis"
+        ]},
+        { "titolo": "Tossinfezione alimentare — forma emetica", "punti": [
+          "4–6 h di incubazione",
+          "Da enterotossina emetica ingerita preformata e termostabile",
+          "Vomito; associata al consumo di riso",
+          "Autolimitante, guarigione dopo eliminazione della tossina"
+        ]},
+        { "titolo": "Tossinfezione alimentare — forma diarroica", "punti": [
+          "24–48 h di incubazione",
+          "Da enterotossina diarroica formata in vivo",
+          "Associata a carne e verdure",
+          "Autolimitante, guarigione dopo eliminazione della tossina"
+        ]}
+      ]
+    },
+    {
+      "id": "clostridium",
+      "nome": "Clostridium (genere)",
+      "gruppo": "gram-pos-spore",
+      "sezioni": [
+        { "titolo": "Generalità", "punti": [
+          "Gram +, anaerobi",
+          "Ubiquitari: suolo, acqua, intestino di animali/uomo",
+          "Richiedono terreni molto specifici"
+        ]}
+      ]
+    },
+    {
+      "id": "clostridium-tetani",
+      "nome": "Clostridium tetani",
+      "gruppo": "gram-pos-spore",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Gram +, forma bacillare, anaerobio",
+          "Sporigeno → spora a «racchetta da tennis»",
+          "Ubiquitario; cresce su terreni specifici (ricchi di sangue o con sostanze riducenti)"
+        ]},
+        { "titolo": "Neurotossina tetanica", "punti": [
+          "Tetanolisina: emolitica, tossica su piastrine, eritrociti, PMN, macrofagi, fibroblasti",
+          "Tetanospasmina: solubile, codificata dal gene tetX; blocca il rilascio di neurotrasmettitori inibitori (GABA, glicina) → paralisi spastica"
+        ]},
+        { "titolo": "Trasmissione", "punti": [
+          "Lesioni accidentali sporche, tipo lacero-contuso (poco ossigeno)",
+          "Cordone ombelicale con bisturi non sterili (tetano neonatale)",
+          "Incisioni gastro-intestinali (tetano chirurgico)",
+          "Siringhe non sterili (tetano da siringa)"
+        ]},
+        { "titolo": "Sintomi", "punti": [
+          "Incubazione ~1 settimana",
+          "Iniziali: crampi muscolari intorno al sito, rigidità dei muscoli del volto/collo, cefalea, tachicardia",
+          "Trisma: riso sardonico, incapacità di aprire la bocca per ipertonia dei masseteri",
+          "Opistotono: contrattura addominale con inarcamento del dorso e spasmo di laringe/faringe → cianosi e morte per arresto cardio-respiratorio",
+          "Forme: generalizzato (più diffuso), localizzato"
+        ]},
+        { "titolo": "Diagnosi e terapia", "punti": [
+          "Diagnosi anamnestica (microbiologica difficile: l'ossigeno uccide il batterio, solo 30% positivo)",
+          "Antibiotici (penicillina), chirurgia, antitossina (efficace solo se la tossina non si è fissata; +anatossina se stato vaccinale incerto), terapia di supporto (miorilassanti, sedativi, ventilazione)"
+        ]},
+        { "titolo": "Vaccino", "punti": [
+          "Tossina detossificata al 4‰ con formalina; obbligatorio, richiamo ogni 10 anni"
+        ]}
+      ]
+    },
+    {
+      "id": "clostridium-botulinum",
+      "nome": "Clostridium botulinum",
+      "gruppo": "gram-pos-spore",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Gram +, aspetto rigonfio per la spora, anaerobio",
+          "Sporigeno → spore molto resistenti al calore (30' a 121 °C per distruggerle)",
+          "Ubiquitario, si ambienta in conserve sott'olio (meno aceto/sughi di pomodoro)"
+        ]},
+        { "titolo": "Classificazione", "punti": [
+          "In base alla tossina: 7 tipi (A–G); patologici per l'uomo A, B, E, F",
+          "In base all'attività proteolitica: gruppo I (proteolitici, alterano i cibi), gruppo II (non proteolitici)"
+        ]},
+        { "titolo": "Neurotossina botulinica", "punti": [
+          "Agisce su sinapsi colinergiche e terminazioni presinaptiche",
+          "Blocca il rilascio di acetilcolina → paralisi flaccida"
+        ]},
+        { "titolo": "Forme di botulismo", "punti": [
+          "Classico: ingestione di alimento con tossina (A-B-F)",
+          "Da ferite: il batterio penetra come spora (A-B)",
+          "Infantile: < 1 anno, per alimenti zuccherini (es. miele); flora intestinale non adeguata (A-B-F)"
+        ]},
+        { "titolo": "Sintomi", "punti": [
+          "Iniziali (intossicazione alimentare): nausea, diarrea, vertigini, crampi addominali, secchezza di fauci e faringe",
+          "Dopo 12–36 h (neurologici): midriasi, diplopia, disfagia, paralisi respiratoria e morte per insufficienza/asfissia"
+        ]},
+        { "titolo": "Diagnosi, terapia, Botox", "punti": [
+          "Diagnosi clinica; isolamento nelle feci; rilevazione tossina (modello animale o immunologia)",
+          "Terapia: siero antitossico trivalente, antibiotici, ventilazione",
+          "Botox: dose minima intradermica non tossica per rilassare i muscoli del viso, effetto temporaneo"
+        ]}
+      ]
+    },
+    {
+      "id": "clostridium-difficile",
+      "nome": "Clostridium difficile",
+      "gruppo": "gram-pos-spore",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Presente in suolo, acqua, sabbia, sedimenti marini, ambienti ospedalieri",
+          "Anche in flora intestinale e vaginale"
+        ]},
+        { "titolo": "Fattori patogeni", "punti": [
+          "Enterotossina A: chemiotattica per i neutrofili → infiammazione da citochine, ipersecrezione di fluidi, necrosi emorragica",
+          "Citotossina B: depolimerizza il citoscheletro → morte cellulare"
+        ]},
+        { "titolo": "Colite pseudomembranosa", "punti": [
+          "Infezione del colon da prolungata terapia antibiotica che distrugge la flora → il C. difficile prende il sopravvento; frequente negli ospedalizzati",
+          "Sintomi: placche giallastre (pseudomembrane) nella mucosa, febbre, nausea, crampi, leucocitosi, diarrea acquosa + sangue; morte nel 10% per disidratazione e shock",
+          "Diagnosi: osservazione del colon, coprocoltura, test immunoenzimatici per tossine A e B",
+          "Terapia: antibiotici previo antibiogramma"
+        ]}
+      ]
+    },
+    {
+      "id": "clostridium-perfringens",
+      "nome": "Clostridium perfringens",
+      "gruppo": "gram-pos-spore",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Anaerobio, ubiquitario",
+          "5 tipi sierologici (A–E)",
+          "Molte tossine (α, β, ε, ι, μ); la più importante è la tossina α (fosfolipasi che attacca i fosfolipidi di membrana, azione edematogena, lesiona l'endotelio dei vasi)"
+        ]},
+        { "titolo": "Cellulite anaerobica / gangrena gassosa", "punti": [
+          "Trasmissione: penetrazione della spora in ferita lacero-contusa",
+          "Cellulite: fino al connettivo",
+          "Gangrena gassosa: mionecrosi progressiva con liquefazione del tessuto muscolare e produzione di gas",
+          "Terapia: cellulite → antibiotici + medicazione/drenaggi + siero immune polivalente; gangrena → antibiotici + medicazione + iperossigenazione (camera iperbarica), eventuale amputazione"
+        ]},
+        { "titolo": "Tossinfezione alimentare / enterite necrotizzante", "punti": [
+          "Tossinfezione: ingestione di batterio e tossina preformata (carni); dopo 8–12 h diarrea, nausea, dolori addominali",
+          "Enterite necrotizzante: tipo C, carne di maiale poco cotta/cruda; azione necrotizzante sulla mucosa dell'intestino tenue"
+        ]},
+        { "titolo": "Altre patologie", "punti": [
+          "Ascessi, infezioni di ferite, osteomieliti, pleuriti, peritoniti, setticemie, infezioni uro-genitali"
+        ]}
+      ]
+    },
+    {
+      "id": "neisseria",
+      "nome": "Neisseriaceae (genere)",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Generalità", "punti": [
+          "Gram –, immobili, forma sferica (unici cocchi Gram –)",
+          "Possono avere o meno la capsula; alcuni con pili",
+          "Aerobi–anaerobi facoltativi, esigenti nutrizionalmente",
+          "Catalasi +, ossidasi +"
+        ]}
+      ]
+    },
+    {
+      "id": "neisseria-gonorrhoeae",
+      "nome": "Neisseria gonorrhoeae",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Gonococco; diplococco a chicco di caffè; privo di capsula, con fimbrie",
+          "4 tipi di colonie: T1/T2 (LPS completo, piccole S, virulente), T3/T4 (LPS senza catena di carboidrati, grandi R, meno virulente)",
+          "Coltura su terreno di Thayer-Martin (agar sangue + antibiotici VCN: vancomicina, colistina, nistatina), selettivo per Gram –, a 35–37 °C"
+        ]},
+        { "titolo": "Fattori di virulenza", "punti": [
+          "Pili: determinanti per adesione all'epitelio urogenitale (T1/T2 più pili = più virulenti); resistenza alla fagocitosi",
+          "Proteine di membrana esterna: proteina I (porine A/B), proteina II (adesione a cellule eucariotiche), proteina III (RMP, blocca l'attività battericida del siero); P I + P III = vera porina gonococcica",
+          "Lipopolisaccaride: lipide A tossico, catena oligosaccaridica (lipooligosaccaride) → minore variabilità antigenica e risposta anticorpale",
+          "IgA proteasi: inattiva le IgA, favorisce colonizzazione",
+          "Proteine che legano il ferro (transferrina, lattoferrina, emoglobina)",
+          "Produzione di beta-lattamasi"
+        ]},
+        { "titolo": "Gonorrea — maschio", "punti": [
+          "Uretrite: 3–5 gg dal rapporto; il batterio raggiunge l'uretra anteriore → sub-epitelio → pus; sintomatica nel 95%",
+          "Complicanze se non trattata: blocco dell'uretra per tessuto cicatriziale, prostatite acuta, epididimite",
+          "Gonorrea anorettale e faringiti (sesso orale)"
+        ]},
+        { "titolo": "Gonorrea — femmina", "punti": [
+          "Perdite vaginali e dolori addominali, ghiandole del Bartolini, uretriti e vaginiti",
+          "Sintomatica in < 40% (perdite scambiate per flusso fisiologico)",
+          "Interessa endometrio, tube, ovaio → endometriti, salpingiti, ovaiti, peritoniti, sterilità",
+          "PID (malattia cronica pelvica); sterilità fino al 70% alla terza ricaduta"
+        ]},
+        { "titolo": "Complicanze nei due sessi", "punti": [
+          "Congiuntivite gonococcica (acuta, purulenta), faringite",
+          "Oftalmia neonatale (contatto col canale infetto; gocce/pomate con eritromicina, nitrato d'argento o tetraciclina)",
+          "Infezione disseminata con setticemia (1% uomini, 3% donne): forma dermatitica (lesioni maculo-papulari distali agli arti, non ulcerano) e forma artritica (90%, grosse articolazioni, purulenta)",
+          "Raramente endocarditi, osteomieliti, meningiti"
+        ]},
+        { "titolo": "Diagnosi e terapia", "punti": [
+          "Batterioscopico diretto (Gram): tappeto di polimorfonucleati infarciti di diplococchi",
+          "Colturale, identificazione biochimica (ossidasi), fermentazione solo del glucosio",
+          "Terapia: cefalosporine (ceftriaxone, cefotaxime), chinoloni (ciprofloxacina, ofloxacina), penicillina ad alte dosi"
+        ]}
+      ]
+    },
+    {
+      "id": "neisseria-meningitidis",
+      "nome": "Neisseria meningitidis",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Diplococco, dotato di capsula se patogeno",
+          "13 sierogruppi (antigeni capsulari); patogeni A, B, C, Y, W135",
+          "Possibili pili; colonie piccole, mucose, incolori/grigie"
+        ]},
+        { "titolo": "Fattori di virulenza", "punti": [
+          "Capsula, pili, lipooligosaccaride, transferrina, IgAsi, proteine di membrana (5 classi)"
+        ]},
+        { "titolo": "Patogenesi", "punti": [
+          "Si localizza sulla mucosa naso-faringea (adesione via pili/capsula)",
+          "Trasmissione aerea tra persone a stretto contatto (scuole, asili, famiglia, caserme); può essere commensale",
+          "Batteriemia: dal naso-faringe al sangue → tonsilliti, faringiti",
+          "Meningite: esordio improvviso con mal di testa intenso, vomito, rigidità nucale, coma; vasi infiammati → trombosi; meningi con essudato purulento",
+          "Setticemia fulminante (meningococcemia): lipide A → infiltrazione perivascolare, trombosi piccoli vasi, febbre, petecchie emorragiche, CID, ghiandole surrenali, collasso circolatorio (sindrome di Waterhouse-Friderichsen)",
+          "Altre: polmoniti (Y, W135), artriti, uretriti"
+        ]},
+        { "titolo": "Cause di aggravamento", "punti": [
+          "Non note del tutto; ipotesi: scarse IgM/IgG battericide, inibizione del siero battericida da IgAsi, carenza di complemento (C5-C6-C7-C8)"
+        ]},
+        { "titolo": "Diagnosi", "punti": [
+          "Campioni: sangue, liquor, liquidi articolari, tamponi",
+          "Immunofluorescenza, colorazione di Gram",
+          "Esame colturale: tappeto di PMN NON infarciti (i meningococchi capsulati non sono fagocitati); su Thayer-Martin, fermentazione di glucosio e maltosio",
+          "Rigonfiamento capsulare (fini epidemiologici)"
+        ]},
+        { "titolo": "Terapia, vaccino, epidemiologia", "punti": [
+          "Terapia: penicillina, sulfamidici (profilassi portatori), rifampicina (resistenza), cloramfenicolo, macrolidi",
+          "Vaccino: polisaccaridi capsulari, polivalente (A,C,Y,W135) o monovalente (C o B); per comunità",
+          "Epidemiologia: 80% donne portatrici asintomatiche, 95% uomini sintomatici"
+        ]}
+      ]
+    },
+    {
+      "id": "pseudomonas-aeruginosa",
+      "nome": "Pseudomonas aeruginosa",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Generalità Pseudomonadaceae", "punti": [
+          "Gram –, bacilli allungati, ubiquitari (ambienti umidi)",
+          "Non fermentano zuccheri, aerobi obbligati, possono essere mobili",
+          "Vivono in terreni semplici; tra i più opportunisti",
+          "5 gruppi (1, 2, 5 di interesse umano)"
+        ]},
+        { "titolo": "Caratteristiche", "punti": [
+          "Gruppo 1, ubiquitario, tollera fino a 42 °C",
+          "Decompone sostanze organiche; tra i più resistenti ai farmaci"
+        ]},
+        { "titolo": "Pigmenti prodotti", "punti": [
+          "Piocianina: blu non fluorescente; ciliostatica, antibiotica (G+/G–), pro-infiammatoria",
+          "Pioverdina: fluorescente, da bianco a blu-verde con lampada di Wood",
+          "Fluoresceina: fluorescente verde-giallo"
+        ]},
+        { "titolo": "Fattori di virulenza", "punti": [
+          "Capsula, pili, lipopolisaccaride, piocianina",
+          "Tossine: esotossina A ed S (inibiscono sintesi proteica), leucocidina (citotossica), elastasi (distrugge tessuti con elastina), fosfolipasi C (diffusione)",
+          "Resistenza agli antibiotici, biofilm, flagelli lofotrichi",
+          "Assetto biochimico: ossidasi +, coagulasi +, catalasi +, ureasi +, proteasi +"
+        ]},
+        { "titolo": "Patologie", "punti": [
+          "Infezioni polmonari: broncopolmoniti, polmoniti necrotizzanti (pazienti già malati)",
+          "Cute: gravi negli ustionati, anche unghie",
+          "Occhio: portatori di lenti a contatto, ulcere corneali",
+          "Orecchie: otiti esterne (nuotatori, anziani, diabetici)",
+          "Vie urinarie: pazienti cateterizzati, cistiti",
+          "Batteriemia (neutropenici, diabetici, ustionati), endocardite (tossicodipendenti), meningite (rachicentesi), tratto GI/SNC/muscoli"
+        ]},
+        { "titolo": "Diagnosi e terapia", "punti": [
+          "Campione da pus/sangue/urina, Gram, coltivazione",
+          "Produce penicillinasi e tutti i meccanismi di resistenza → antibiogramma obbligatorio",
+          "Antibiotici recenti: ticarcillina, imipenem, nuovi macrolidi e chinoloni, aztreonam, cefalosporine"
+        ]}
+      ]
+    },
+    {
+      "id": "mycobacterium",
+      "nome": "Mycobacterium (genere)",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Generalità (ordine Actinomycetales)", "punti": [
+          "Forma bacillare, colonie frastagliate/rugose (giallo-arancio per cristalli di carotene)",
+          "No flagelli, acapsulati, aerobi obbligati",
+          "Crescita lenta: duplicazione 12–24 h, replicazione in 3 settimane",
+          "Catalasi +, riducono nitrati a nitriti, resistono ad acidi e alcoli",
+          "Terreni ricchi e selettivi (verde di malachite); terreno liquido di Dubos (crescita in 7 gg)"
+        ]},
+        { "titolo": "Parete", "punti": [
+          "Arabinogalattani (scarso potere immunogeno), peptidoglicano, lipidi abbondanti",
+          "Grassi: esteri di acidi grassi con trealosio (acido tubercolo-stearico); dimicolil-trealosio = fattore cordale (virulenza)",
+          "Cere (A–D): la D è adiuvante immunologico",
+          "Parete ricca di lipidi → si comportano come Gram + in colorazione"
+        ]},
+        { "titolo": "Colorazioni", "punti": [
+          "Ziehl-Neelsen: sfrutta la resistenza ad acidi/alcoli; carbolfucsina + riscaldamento + selezione con acidi/alcoli + blu di metilene → micobatteri rossi, gli altri blu",
+          "Metodo fluorocromico di Truant: auramina + rodamina, poi permanganato di potassio → micobatteri gialli alla luce UV"
+        ]},
+        { "titolo": "Classificazione", "punti": [
+          "Per velocità di crescita: lenta (>7 gg), rapida (<7 gg), con particolari esigenze, non coltivabili",
+          "Per pigmenti: fotocromogeni (luce), scotocromogeni (buio)",
+          "Complessi di interesse: M. tuberculosis complex (tuberculosis, bovis, africanum), M. avium complex (MAI/MAC)",
+          "Anglosassone: M. tuberculosis e M.O.T.T. (mycobacteria other than tuberculosis)"
+        ]}
+      ]
+    },
+    {
+      "id": "mycobacterium-tuberculosis",
+      "nome": "Mycobacterium tuberculosis",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Patogenesi della tubercolosi", "punti": [
+          "Infezione per via aerea → localizzazione nelle vie aeree profonde (polmone)",
+          "Prima lesione: tubercolo (granuloma)",
+          "Complesso primario: cellule giganti di Langhans infarcite di micobatteri, cellule epitelioidi, linfociti e fibroblasti",
+          "Evoluzione: se prevale la virulenza → necrosi caseosa con caverne; se prevale l'immunità → guarigione apparente (calcificazione con batteri vivi all'interno)"
+        ]},
+        { "titolo": "Stadi", "punti": [
+          "1° stadio (3–8 sett.): infezione esogena, complesso primario",
+          "2° stadio (~3 mesi): batteriemia, infezioni endogene (miliare, meningea, ossea, renale)",
+          "3° stadio (3–4 mesi): interessamento delle pleure",
+          "4° stadio: forme croniche (anche dopo 3 anni)"
+        ]},
+        { "titolo": "Sintomatologia", "punti": [
+          "Perdita di peso, sudorazione notturna, malessere aspecifico",
+          "Tosse ed escreato (variabile, fino a emottisi in caso di necrosi)"
+        ]},
+        { "titolo": "Diagnosi clinica", "punti": [
+          "Evidenza radiografica (tubercoli, ascessi, lobi coinvolti)",
+          "Osservazione microscopica/colturale",
+          "Test della tubercolina (PPD nel sottocute, lettura a 48–72 h): dimostra solo il contatto, non la malattia in atto"
+        ]},
+        { "titolo": "Diagnosi di laboratorio", "punti": [
+          "Fluidificazione/decontaminazione con NaOH 2%, colorazione Ziehl-Neelsen, semina e incubazione a 37 °C per 8 settimane",
+          "PCR/sonde molecolari (24 h, pazienti gravi)",
+          "Gas cromatografia ad alta risoluzione HPLC (2–4 gg): profilo degli acidi micolici",
+          "Quantiferon test: misura INF-γ dei linfociti T dopo stimolazione con antigeni specifici (infezione attiva o riattivazione latente)"
+        ]},
+        { "titolo": "Terapia e vaccino", "punti": [
+          "Prima scelta (inibiscono l'RNA polimerasi): rifampicina, pirazinamide, streptomicina, etambutolo, isoniazide; almeno 9 mesi",
+          "Seconda scelta: nuovi macrolidi (azitromicina, claritromicina), fluorochinoloni",
+          "Nuovi protocolli: 1 farmaco di prima + 1 di seconda scelta",
+          "Vaccino: M. bovis attenuato in vivo; era obbligatorio, ora no (scarsa durata dell'immunità)"
+        ]}
+      ]
+    },
+    {
+      "id": "mycobacterium-leprae",
+      "nome": "Mycobacterium leprae (Bacillo di Hansen)",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Lebbra — generalità", "punti": [
+          "Malattia cronica a lentissima evoluzione",
+          "Incubazione da pochi mesi a 20 anni (media 3)",
+          "Trasmissione: contagio interumano con secrezioni nasali, epidermide desquamante infetta, morso di zanzara/vettori"
+        ]},
+        { "titolo": "Lebbra tubercoloide (nervosa)", "punti": [
+          "Elevata risposta cellulo-mediata, bassa risposta anticorpale; poco infettiva (pochi batteri)",
+          "Lesioni cutanee da chiazze ipopigmentate a eritematose",
+          "Interessamento nervi periferici (ispessimento, perdita di sensibilità)",
+          "Atrofia muscolare e paralisi motoria"
+        ]},
+        { "titolo": "Lebbra lepromatosa (nodulare)", "punti": [
+          "Deficit della risposta all'antigene, alta risposta anticorpale, alta concentrazione di batteri nei fagociti cutanei → alta infettività",
+          "Macule cutanee che confluiscono in granulomi (lepromi)",
+          "No necrosi caseosa; per via ematica → forma sistemica (vari organi)"
+        ]},
+        { "titolo": "Diagnosi e terapia", "punti": [
+          "Batterio non coltivabile in vitro → diagnosi solo clinica",
+          "Terapia: dapsone (antimetabolita che blocca i folati) associato ai farmaci antitubercolari di prima scelta"
+        ]}
+      ]
+    },
+    {
+      "id": "haemophilus",
+      "nome": "Haemophilus (genere)",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Generalità", "punti": [
+          "Bacilli piccoli e pleiomorfi, aerobi facoltativi, immobili",
+          "Commensali di vie aeree superiori, cavo orale, tratto intestinale, vagina",
+          "Esigenti: fattore X (emina/gruppo eme) e fattore V (NAD/NADP)",
+          "Agar sangue (non di pecora, degrada il NAD) o fenomeno del satellitismo con Staphylococcus (produce fattore V)",
+          "Resistenti alla bacitracina"
+        ]}
+      ]
+    },
+    {
+      "id": "haemophilus-influenzae",
+      "nome": "Haemophilus influenzae",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Nome dato perché ritenuto agente dell'influenza",
+          "Commensale; patogeno quando sintetizza la capsula (non fagocitato)",
+          "Capsulato: 6 sierotipi (A–F); il B è il più patogeno, responsabile del 95% delle meningiti pediatriche"
+        ]},
+        { "titolo": "Patologie", "punti": [
+          "Nei sani colonizza rinofaringe e mucosa orale già dai 3 mesi",
+          "Rinorrea o bronchite (alte/basse vie)",
+          "Con batteriemia: epiglottite con laringite ostruttiva, polmonite, artriti suppurative, osteomieliti, congiuntiviti, sinusiti",
+          "Meningite (3–18 mesi) via plesso corioideo"
+        ]},
+        { "titolo": "Diagnosi, terapia, vaccino", "punti": [
+          "Campioni: liquor, sangue, fluido sinoviale, espettorati; esame microscopico, biochimico, agglutinazione, immunoenzimatici (PRP capsulare)",
+          "Terapia: cefalosporine ampio spettro (gravi), azitromicina e fluorochinoloni (non gravi)",
+          "Vaccino obbligatorio: PRP purificato con vettori immunogeni (tossina tetanica o difterica)"
+        ]}
+      ]
+    },
+    {
+      "id": "haemophilus-parainfluenzae",
+      "nome": "Haemophilus parainfluenzae",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Meno patogeno di H. influenzae",
+          "Colonizza solo le alte vie respiratorie",
+          "Richiede solo il fattore V",
+          "Quadri simil-influenzali lievi, solo in pazienti con problemi respiratori pregressi"
+        ]}
+      ]
+    },
+    {
+      "id": "haemophilus-ducreyi",
+      "nome": "Haemophilus ducreyi",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Non fa parte della nostra flora",
+          "Richiede solo il fattore X"
+        ]},
+        { "titolo": "Patologia — ulcera molle", "punti": [
+          "Malattia venerea frequente",
+          "Ulcere genitali dolenti con margini non induriti (le distingue dalla sifilide)",
+          "Linfonodi inguinali ingrossati → bubboni con materiale purulento"
+        ]},
+        { "titolo": "Diagnosi e terapia", "punti": [
+          "Clinica; isolamento colturale su agar sangue dai margini dell'ulcera (10 gg di incubazione)",
+          "Antibiotici senza particolari resistenze"
+        ]}
+      ]
+    },
+    {
+      "id": "legionella",
+      "nome": "Legionella",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Generalità", "punti": [
+          "Isolata nel 1976 a Philadelphia (raduno dell'American Legion: 29 morti su 150 infetti)",
+          "Bacillo, mobile, predilige ambienti caldi e umidi",
+          "Parassita di amebe e protozoi acquatici (vive nelle cisti): acque di lago, sorgenti termali, condizionatori, umidificatori, docce, bagni, piscine",
+          "Catalasi +; oltre 30 specie con più di 60 sierotipi",
+          "Gram poco efficace → fucsina + verde di malachite o impregnazione argentica",
+          "Terreni BCYE (buffered charcoal yeast extract)"
+        ]},
+        { "titolo": "Trasmissione e patologia", "punti": [
+          "Trasmessa con aerosol infetto",
+          "Legionellosi/malattia dei legionari: polmonite acuta purulenta con febbre, tosse, brividi; coinvolgimento sistemico (SNC, fegato, reni, milza, GI); soprattutto in chi ha apparato respiratorio compromesso",
+          "Polmonite da Legionella: solo polmoni",
+          "Febbre di Pontiac: forma più lieve, simil-influenzale (febbre, astenia, cefalea, mialgia)"
+        ]},
+        { "titolo": "Diagnosi e profilassi", "punti": [
+          "Ricerca nell'escreato con anticorpi monoclonali marcati con fluoresceina; sonde molecolari/PCR",
+          "Terapia: macrolidi e chinoloni",
+          "Profilassi fisica: acqua a 60 °C per 30 min, raggi UV, filtri; chimica: ioni metallici (rame, argento), agenti ossidanti (cloro/ipoclorito, iperclorazione shock nelle piscine)"
+        ]}
+      ]
+    },
+    {
+      "id": "escherichia-coli",
+      "nome": "Escherichia coli",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Commensale dell'intestino, patogeno opportunista",
+          "6 sierotipi sempre patogeni, mobile",
+          "Materiale adesinico: capsula e fimbrie",
+          "Lattosio fermentante, catalasi -"
+        ]},
+        { "titolo": "EPEC (enteropatogeni)", "punti": [
+          "Plasmidi per strutture adesiniche",
+          "Alterano i microvilli → malassorbimento → diarrea acquosa, febbre; frequente in età infantile; trasmissione oro-fecale"
+        ]},
+        { "titolo": "ETEC (enterotossigeni)", "punti": [
+          "Due tossine plasmidiche: LT termolabile (stimola adenilato ciclasi → cAMP → ipersecrezione), ST termostabile (guanilato ciclasi → cGMP)",
+          "Feci acquose/diarrea; responsabili della diarrea del viaggiatore; oro-fecale"
+        ]},
+        { "titolo": "EIEC (enteroinvasivi)", "punti": [
+          "Proteine invasive → entrano nella mucosa, moltiplicano e la distruggono",
+          "Dissenteria (diarrea muco-sanguinolenta); trasmissione da acqua/cibo contaminati"
+        ]},
+        { "titolo": "EHEC (enteroemorragici, O157:H7)", "punti": [
+          "Verotossine (Shiga-like), ADP-ribosilanti → blocco sintesi proteica → morte cellulare",
+          "Colite emorragica; nel 2–10% → sindrome uremico-emolitica (insufficienza renale acuta, anemia emolitica, trombocitopenia); oro-fecale"
+        ]},
+        { "titolo": "EAEC, DAEC e sierotipi speciali", "punti": [
+          "EAEC (enteroaggreganti): adesione e alterazione mucosa, citotossine letali, fuoriuscita di sangue",
+          "DAEC (diffusamente aderenti): capacità di adesione",
+          "Sierotipi P: pili che favoriscono l'adesione alle vie urinarie → cistiti/infezioni risalenti",
+          "Sierotipi K1: antigene capsulare tipo 1 → meningiti"
+        ]}
+      ]
+    },
+    {
+      "id": "klebsiella",
+      "nome": "Klebsiella (genere)",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Generalità", "punti": [
+          "Presenti nel tratto intestinale o nelle vie aeree superiori",
+          "Immobili, dotati di capsula (>80 sierotipi in base all'antigene K)",
+          "Colonie su MacConkey mucose e bagnate",
+          "Lattosio fermentanti"
+        ]},
+        { "titolo": "K. pneumoniae", "punti": [
+          "Sottospecie pneumoniae: la più diffusa, isolata in polmoniti; anche infezioni urinarie",
+          "Sottospecie rhinoscleromatis: rinoscleroma (granuloma cronico del rinofaringe)",
+          "Sottospecie ozenae: ozena (rinite atrofica cronica)"
+        ]},
+        { "titolo": "K. oxytoca", "punti": [
+          "Diffusa; infezioni batteriemiche, intestinali, urinarie, respiratorie, delle ferite"
+        ]}
+      ]
+    },
+    {
+      "id": "proteus",
+      "nome": "Proteus",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Generalità e patologie", "punti": [
+          "Due specie: P. mirabilis e P. vulgaris; normale flora gastrointestinale",
+          "Mobile con flagelli peritrichi → fenomeno dello sciamaggio (colonie a cerchi concentrici che turbano l'indagine microbiologica; si usano terreni appositi)",
+          "Ureasi + → infezioni delle vie urinarie: scinde l'urea in ioni ammonio e CO2, alza il pH",
+          "L'alterazione di pH danneggia le cellule e precipita sali → calcoli renali (sito di permanenza del batterio, fenomeni cronici)",
+          "Pili → buona adesione e resistenza al flusso di urina",
+          "Infezioni: cistiti, infezioni della vescica, pielonefriti, calcolosi renale"
+        ]}
+      ]
+    },
+    {
+      "id": "salmonella",
+      "nome": "Salmonella",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Generalità", "punti": [
+          "Sempre patogeno, mobile",
+          "Produce idrogeno solforato → colonie nere",
+          "Due specie: S. enterica (6 sottospecie, 2000 sottotipi; sierotipi Typhi, Typhimurium, Paratyphi) e S. bongori (20 sierotipi)"
+        ]},
+        { "titolo": "Trasmissione e infezioni", "punti": [
+          "Sierotipi adattati all'uomo: S. Typhi (tifo), S. Paratyphi A/B/C (paratifo); solo interumana, oro-fecale",
+          "Sierotipi ubiquitari: S. Typhimurium, S. Enteritidis; provenienza animale (zoonosi), acqua/cibi contaminati da feci",
+          "Serve carica batterica elevata (10^6–10^7 UFC): batteri sensibili all'acidità del tratto digerente"
+        ]},
+        { "titolo": "Virulenza", "punti": [
+          "Capsula → antigene Vi",
+          "Adesione e soprattutto invasione (danno cellulare)",
+          "Due enterotossine che alterano l'equilibrio idroelettrico"
+        ]},
+        { "titolo": "Gastroenteriti da Salmonella (salmonellosi)", "punti": [
+          "Zoonotica (soprattutto pollame); ingestione di alimenti crudi (muore oltre 60 °C)",
+          "Incubazione 8–24 h",
+          "Sintomi: diarrea NON sanguinolenta (non invasiva), nausea, vomito, crampi",
+          "Autolimitante in ~5 gg, quasi nessuna diffusione sistemica; diagnosi coprologica"
+        ]},
+        { "titolo": "Tifo / febbre enterica / febbre tifoide", "punti": [
+          "Incubazione 1–2 settimane",
+          "Sintomi: inappetenza, dolori muscolari, mal di testa, insonnia, febbre a andamento oscillante (picchi > 40 °C)",
+          "Ciclo: 1) ingestione; 2) colonizzazione tenue e invasione sottomucosa → linfonodi mesenterici → macrofagi → dotto toracico → sangue (batteriemia); 3) fegato, milza, midollo (replica nei macrofagi); 4) batteriemia secondaria (setticemia, picchi febbrili); 5) ritorno all'intestino via bile; 6) ulcerazione placche di Peyer, perforazione, dissenteria muco-sanguinolenta",
+          "Extraintestinali rare (otiti, cistiti, meningiti, osteomieliti, artriti, endocarditi)",
+          "Colonizzazione asintomatica: portatore sano (batterio nella colecisti)"
+        ]},
+        { "titolo": "Diagnosi, terapia, vaccino", "punti": [
+          "Emocoltura (1ª settimana, sensibilità 85%), coprocoltura (3ª–4ª settimana, 85%)",
+          "Sierologia: reazione di Widal (con Wright per la Brucella): anti-O = infezione in atto/recente, anti-H = pregressa, anti-Vi = portatore sano",
+          "Terapia antibiotica; buona resistenza alle reinfezioni",
+          "Vaccino: orale (Ty-2 uccisi o Ty-21 vivi attenuati), intramuscolare (polisaccaride capsulare); durata ~2 anni"
+        ]}
+      ]
+    },
+    {
+      "id": "shigella",
+      "nome": "Shigella",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Generalità", "punti": [
+          "Sempre patogeno, immobile, lattosio non fermentante",
+          "Non produce idrogeno solforato",
+          "4 specie (antigene O): S. dysenteriae (10 sierotipi, patogena), S. flexneri (8, patogena), S. boydii (15), S. sonnei (2)"
+        ]},
+        { "titolo": "Fattori di virulenza", "punti": [
+          "Proteine di invasione Ipa (A, B, C, D): ripiegamento della membrana → ingresso del batterio",
+          "Emolisine: scindono il fagosoma → replicazione",
+          "Tossine: verocitotossina/tossina di Shiga (S. dysenteriae → blocco sintesi proteica → shigellosi), tossina termostabile (S. flexneri, guanilato ciclasi → gastroenterite)"
+        ]},
+        { "titolo": "Trasmissione", "punti": [
+          "Carica infettante bassa (10^2 batteri)",
+          "Interumana (no serbatoio animale)",
+          "5 F: food, fingers, feces, flies, fomites",
+          "Sopravvivono fino a 30 gg in latte, uova, formaggi"
+        ]},
+        { "titolo": "Shigellosi (dissenteria bacillare)", "punti": [
+          "Incubazione 1–3 gg",
+          "Infiammazione dell'intestino con ulcerazione dell'epitelio (capacità invasiva); no diffusione ematica",
+          "Sintomi: dolori addominali intensi, vomito, dissenteria, febbre (da infiammazione)",
+          "Autolimitante ma può evolvere in sindrome uremico-emolitica (rene, SNC) per la Shiga-toxin"
+        ]},
+        { "titolo": "Gastroenterite da Shigella e diagnosi", "punti": [
+          "Forma lieve e autolimitante diarroica",
+          "Diagnosi: coprocoltura, analisi biochimica, antibiogramma"
+        ]}
+      ]
+    },
+    {
+      "id": "yersinia-pestis",
+      "nome": "Yersinia pestis",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Bacillo pleiomorfo; colorazione bipolare al Gram (poli più intensi)",
+          "Ubiquitario, habitat selvatico; circola tra roditori tramite la pulce",
+          "Sopravvive settimane in escreati essiccati o feci; vive a temperatura ambiente",
+          "Capsula proteica prodotta a 35–37 °C (supera le difese dell'uomo); immobile"
+        ]},
+        { "titolo": "Fattori di virulenza", "punti": [
+          "Sopravvivenza nei macrofagi (non nei neutrofili)",
+          "Tossine: polisaccaridica (emorragia organi interni), murina (metabolismo glicopeptidi), lipoproteica",
+          "Fattori antifagocitari: frazione F1 (capsula), antigeni W e V (immunosoppressiva); non prodotti a ~28 °C (nelle pulci non si oppongono alla fagocitosi)"
+        ]},
+        { "titolo": "Peste — trasmissione", "punti": [
+          "Primaria: animale → uomo tramite puntura di pulce → peste bubbonica",
+          "Interumana (rara): puntura di pulce dell'uomo → peste setticemica; via aerea (goccioline) → peste polmonare"
+        ]},
+        { "titolo": "Ciclo infettivo", "punti": [
+          "1) pulce ingerisce il batterio da roditore (T° bassa, no fattori antifagocitosi)",
+          "2) pulce morde l'uomo → batteri fagocitati; muoiono nei neutrofili, duplicano nei macrofagi",
+          "3) T° umana favorevole → progenie con fattori antifagocitari (W, V, F1) → resistono alla fagocitosi",
+          "4) via circolo → tessuti, tossine, sintomi"
+        ]},
+        { "titolo": "Quadri clinici", "punti": [
+          "Peste bubbonica: incubazione 2–6 gg; linfonodi che si rigonfiano (bubboni), febbre alta; mortalità 75% ma la meno grave e più diagnosticabile",
+          "Peste setticemica: dai linfonodi al circolo (fegato, milza, polmoni)",
+          "Peste polmonare: gravi polmoniti, mortalità 90%"
+        ]},
+        { "titolo": "Diagnosi, terapia, profilassi, vaccino", "punti": [
+          "Campioni: sangue, aspirati di bubboni, espettorati; coltura a T° ambiente; sierologia (agglutinazione al lattice, rigonfiamento capsulare)",
+          "Terapia: streptomicina, tetraciclina, gentamicina",
+          "Profilassi: insetticidi, isolamento/quarantena, evitare zone endemiche",
+          "Vaccino: batteri uccisi al formolo o frammenti capsulari; efficace ma non duraturo"
+        ]}
+      ]
+    },
+    {
+      "id": "vibrio-cholerae",
+      "nome": "Vibrio cholerae",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Generalità Vibrio", "punti": [
+          "Bacilli ricurvi a virgola, aerobi–anaerobi facoltativi, ambientali (acque dolci o salmastre)",
+          "Monotrichi (mobili), acapsulati",
+          "Terreni semplici a pH alcalino o con NaCl 0,5–1%",
+          "Fermentano zuccheri e producono acidi, non fermentano gas, ossidasi +"
+        ]},
+        { "titolo": "Caratteristiche", "punti": [
+          "Alcalofilo, non sopravvive in ambiente acido → carica 10^8 per infettare",
+          "Non alofilo"
+        ]},
+        { "titolo": "Fattori di virulenza", "punti": [
+          "Pili: adesine, contatto con la mucosa intestinale",
+          "Tossina (principale): enterotossina termolabile (degradata sopra 60 °C); frammento A (tossico), frammento B (recettoriale)",
+          "Azione ADP-ribosilante: trasferisce ADP-ribosio dal NAD alla proteina R della Gs → Gs lega GTP → adenilato ciclasi stimola cAMP → squilibrio elettrolitico"
+        ]},
+        { "titolo": "Classificazione", "punti": [
+          "139 sierogruppi (antigene O)",
+          "O1: epidemie e pandemie; O139: epidemie localizzate; 2–138: eventi sporadici meno gravi"
+        ]},
+        { "titolo": "Patologia — colera", "punti": [
+          "Trasmissione esclusivamente interumana (no serbatoio animale); acqua/alimenti contaminati",
+          "Non invasivo: aderisce con i pili e produce la tossina",
+          "Sintomi: vomito e diarrea 'ad acqua di riso' (~1 L/ora) → disidratazione, acidosi metabolica, shock ipovolemico, aritmia, insufficienza renale/multiorgano"
+        ]},
+        { "titolo": "Diagnosi, terapia, vaccino", "punti": [
+          "Analisi delle feci, esame microscopico, colturale (MacConkey), identificazione biochimica e sierologica",
+          "Terapia: reidratazione con infusioni saline; antibiotici (tetracicline, sulfamidici, streptomicina)",
+          "Profilassi: evitare cibi/bevande non sicure e cibi crudi",
+          "Vaccino: vibrioni inattivati, durata 2–3 anni (per chi viaggia in zone endemiche)"
+        ]}
+      ]
+    },
+    {
+      "id": "campylobacter-jejuni",
+      "nome": "Campylobacter jejuni",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Generalità Campylobacter", "punti": [
+          "Bacilli ricurvi a spirale, mobili (1–2 flagelli polari)",
+          "Microaerofilo (5% O2, 10% CO2, 85% N2), cresce a 42 °C",
+          "Catalasi +, ossidasi +",
+          "Specie umane: C. jejuni e C. coli"
+        ]},
+        { "titolo": "Trasmissione", "punti": [
+          "Alimenti animali crudi/poco cotti (pollo e derivati); più diffuso per la T° corporea degli animali",
+          "Contaminazione crociata (coltelli infetti)",
+          "Latte non pastorizzato, latticini, acqua contaminata, molluschi crudi"
+        ]},
+        { "titolo": "Fattori di virulenza e patologia", "punti": [
+          "Tossina CTD (cytolethal-distending toxin): citotossina → morte cellulare, rilascio di IL-8 → forte infiammazione",
+          "Campilobatteriosi (zoonosi), incubazione 2–3 gg",
+          "Patogenesi: ingestione → ileo e colon → invasione e replicazione → enterite acuta con diarrea profusa e acquosa (a volte muco-sanguinolenta)",
+          "Autolimitante 5–8 gg; complicanze: batteriemie (1%), autoanticorpi contro il tessuto nervoso → sindrome di Guillain-Barré (paralisi ascendente)"
+        ]},
+        { "titolo": "Diagnosi e terapia", "punti": [
+          "Isolamento ed esame colturale con arricchimento su agar sangue (diagnosi differenziale con Salmonella)",
+          "Reintegrazione di liquidi ed elettroliti; antibiotici (eritromicina, fluorochinoloni)"
+        ]}
+      ]
+    },
+    {
+      "id": "helicobacter-pylori",
+      "nome": "Helicobacter pylori",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Bacillo ricurvo a spirale, microaerofilo, mobile (5–6 flagelli)",
+          "Ossidasi +, catalasi +, ureasi +",
+          "Grazie all'ureasi vive in ambiente acido: commensale/patogeno nello stomaco"
+        ]},
+        { "titolo": "Trasmissione", "punti": [
+          "Uomo-uomo diretta (oro-fecale/oro-orale): unico serbatoio noto è l'uomo",
+          "Iatrogena (endoscopi contaminati)",
+          "Alimenti o acqua contaminati"
+        ]},
+        { "titolo": "Fattori di virulenza", "punti": [
+          "Adesine, ureasi, flagelli (penetrazione mucosa), mucinasi, fosfolipasi (degrada fosfolipidi delle cellule gastriche/duodenali)",
+          "Superossido dismutasi e catalasi (resistenza alla fagocitosi)",
+          "Isola di patogenicità (60%): tossina vacuolizzante VacA (canali ionici, vacuoli, apoptosi) determinata dalla proteina CagA (marker di pericolosità)",
+          "Tipo 1: VacA+ e CagA+ (maggiore patogenicità, evoluzione ulcerosa); Tipo 2: solo VacA o CagA (minore patogenicità)"
+        ]},
+        { "titolo": "Gastrite cronica — forme e fattori", "punti": [
+          "Tipo B: eziologia batterica (ulcera duodenale/gastroduodenale)",
+          "Tipo A: autoimmune (autoanticorpi contro la mucosa)",
+          "Tipo C: chimica (farmaci, alcol, alimentazione)",
+          "Fattori: ospite (età, acloridria), ambientali (fumo, sale, pochi antiossidanti), batterici (VacA/CagA)"
+        ]},
+        { "titolo": "Patogenesi", "punti": [
+          "1) infezione dell'antro; 2) infiammazione della mucosa (asintomatica o gastrite); 3) ulcera gastro/duodenale perforante ed emorragia; 4) possibile carcinoma gastrico"
+        ]},
+        { "titolo": "Diagnosi e terapia", "punti": [
+          "Invasiva: endoscopia + biopsia",
+          "Non invasiva: urea breath test (urea marcata C13, misura CO2 espirata); ricerca antigeni nelle feci",
+          "Terapia: metronidazolo + antibiotici (macrolidi, tetracicline, rifampicina) + omeprazolo (inibitore pompa protonica)"
+        ]}
+      ]
+    },
+    {
+      "id": "brucella",
+      "nome": "Brucella",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Generalità", "punti": [
+          "Coccobacillo, aerobi obbligati",
+          "No capsula, no flagelli",
+          "Terreni arricchiti di liquidi organici e sangue; lunga incubazione (5–10 gg a 37 °C)",
+          "Catalasi +, ossidasi +",
+          "Specie: B. melitensis (ovini/caprini), B. abortus (bovini), B. suis (suini)"
+        ]},
+        { "titolo": "Trasmissione", "punti": [
+          "Animali infetti → ingestione di alimenti crudi/poco cotti (anche latte), inalazione di aerosol, contatto diretto"
+        ]},
+        { "titolo": "Brucellosi", "punti": [
+          "Zoonosi; incubazione 1–6 settimane",
+          "Fase batteriemica con febbre ondulante; fase cronica con granulomi (reni, SNC, testicoli, ovaie, sottocute)",
+          "Patogenesi: fagocitate dai neutrofili → linfonodi regionali, vasi linfatici/ematici → moltiplicazione in organi parenchimatosi → noduli granulomatosi → circolo"
+        ]},
+        { "titolo": "Diagnosi, profilassi, terapia", "punti": [
+          "Prelievo da sangue/ascessi; agglutinazione di Widal-Wright (usata anche per il tifo)",
+          "Profilassi: misure igieniche e vaccinali per il bestiame",
+          "Terapia: tetracicline e aminoglucosidi"
+        ]}
+      ]
+    },
+    {
+      "id": "bordetella-pertussis",
+      "nome": "Bordetella pertussis",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Generalità Bordetella", "punti": [
+          "Shiftano tra forma sferica e bacillare, aerobi obbligati",
+          "Capsulati i patogeni per l'uomo; alcuni con flagelli, dotati di fimbrie",
+          "Terreno di Bordet-Gengou (agar sangue + penicillina-meticillina, selettivo per G+); colonizzazione 1 settimana",
+          "Specie: B. pertussis, B. parapertussis, B. bronchiseptica"
+        ]},
+        { "titolo": "Fattori di virulenza", "punti": [
+          "Capsula",
+          "Adesine: fimbrie, emoagglutinina filamentosa (presa salda sull'epitelio respiratorio)",
+          "Tossine: lipide A; citotossina tracheale (danno alle cellule ciliate, IL-1); tossina dermonecrotica (ciliostatica e citotossica); tossina adenilatociclasica (aumenta cAMP); tossina della pertosse (agisce sulla proteina Gi regolatoria dell'adenilato ciclasi)"
+        ]},
+        { "titolo": "Pertosse — patogenesi", "punti": [
+          "Trasmissione interumana per via aerea; tra i batteri più infettivi",
+          "Incubazione ~1 settimana senza sintomi",
+          "Stadio catarrale (15 gg): massima contagiosità, febbre, malessere, starnuti (tossina dermonecrotica)",
+          "Stadio parossistico (2–5 sett.): ipersecrezione e ipersensibilità all'istamina; attacchi di tosse persistente con urlo ispiratorio (tosse asinina), convulsioni, vomito, leucocitosi",
+          "Stadio di convalescenza (1 mese): tosse in calo; complicanze possibili (attacchi epilettici, polmonite, encefalopatia)"
+        ]},
+        { "titolo": "Diagnosi, terapia, vaccino", "punti": [
+          "Isolamento dalle secrezioni bronchiali; immunofluorescenza per la specie",
+          "Terapia poco efficace (sintomi da tossina); eritromicina o ampicillina per ridurre i batteri",
+          "Vaccino obbligatorio: acellulari (tossina disattivata o fimbrie/emoagglutinina); primi 6 mesi con richiami"
+        ]}
+      ]
+    },
+    {
+      "id": "chlamydophila-pneumoniae",
+      "nome": "Chlamydophila pneumoniae",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Generalità Chlamydiaceae", "punti": [
+          "Molto piccoli, parassiti endocellulari obbligati (citodipendenti, non sintetizzano ATP)",
+          "Non coltivabili su terreni sintetici (servono tappeti cellulari)",
+          "Parete senza NAM, sostituito da proteine CRP ricche di cisteina; porine di membrana",
+          "Ciclo dimorfico: corpo elementare (CE, extracellulare, infettante, metabolicamente inattivo) e corpo reticolato (CR, intracellulare, metabolicamente attivo)",
+          "Colorazioni: Giemsa (CE rossi, CR blu), Macchiavello (CE blu, CR rossi); campioni arricchiti con Lugol"
+        ]},
+        { "titolo": "Caratteristiche", "punti": [
+          "Corpo elementare piriforme; inclusioni senza glicogeno",
+          "Batterio emergente"
+        ]},
+        { "titolo": "Trasmissione e patologia", "punti": [
+          "Diretta per via aerea",
+          "Responsabile del 10% delle polmoniti acquisite in comunità",
+          "Quadri simil-influenzali, sinusiti, febbre, faringiti, bronchiti"
+        ]},
+        { "titolo": "Diagnosi e terapia", "punti": [
+          "Isolamento colturale su tappeto cellulare, metodi immunologici, PCR, ELISA",
+          "Terapia: tetracicline e macrolidi"
+        ]}
+      ]
+    },
+    {
+      "id": "chlamydophila-psittaci",
+      "nome": "Chlamydophila psittaci",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Corpo elementare rotondeggiante; inclusioni senza glicogeno"
+        ]},
+        { "titolo": "Trasmissione", "punti": [
+          "Contatto diretto con escrementi di volatili infetti; via aerea"
+        ]},
+        { "titolo": "Psittacosi / ornitosi", "punti": [
+          "Da 'psittaci' (pappagallo, primo animale in cui è stato isolato)",
+          "Incubazione 2 settimane",
+          "Sviluppo: 1) entra dalle vie aeree; 2) diffusione sistemica; 3) sistema reticolo-endoteliale, fegato, milza; 4) pneumopatia acuta febbrile; 5) altri organi (SNC con convulsioni/coma/encefalite, fegato, milza, raramente GI)"
+        ]},
+        { "titolo": "Diagnosi, terapia, profilassi", "punti": [
+          "Isolamento e coltura su tappeto cellulare; titolo anticorpale anti-clamidia",
+          "Terapia: macrolidi",
+          "Profilassi: mangime con tetracicline ai volatili"
+        ]}
+      ]
+    },
+    {
+      "id": "chlamydia-trachomatis",
+      "nome": "Chlamydia trachomatis",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Antigeni", "punti": [
+          "Antigeni del gruppo glicolipidico (superficie)",
+          "Antigene gruppo-specifico (profondo, permette la differenziazione in sierotipi)"
+        ]},
+        { "titolo": "Sierotipi A, B, Ba, C — Tracoma", "punti": [
+          "Trasmissione interumana per contatto con secrezioni oculari",
+          "Cheratocongiuntivite cronica (infiammazione della congiuntiva)",
+          "Interessa la cornea → tessuto cicatriziale → panno corneale → cecità",
+          "Diffusa nei paesi a clima sub-tropicale"
+        ]},
+        { "titolo": "Sierotipi D–K — Tratto urogenitale", "punti": [
+          "Uretrite non gonococcica: assenza di secrezioni purulente; 35% delle uretriti non gonococciche; possibili stenosi, sterilità, infezioni all'epididimo",
+          "Uretrite post-gonococcica: contemporanea infezione da gonococco (15–35% dei casi); il paziente risponde alla terapia per la gonorrea ma la C. trachomatis sopravvive (parete diversa) e si manifesta dopo; nella donna possibile PID"
+        ]},
+        { "titolo": "Altre infezioni", "punti": [
+          "Polmonite interstiziale del neonato (canale del parto di madre infetta)",
+          "Congiuntivite da inclusi nel neonato (parto) e nell'adulto (secrezioni urogenitali del partner)"
+        ]},
+        { "titolo": "Sierotipi L1, L2, L3 — Linfogranuloma venereo", "punti": [
+          "Trasmissione sessuale, sistemica, per stadi",
+          "1) lesioni primarie (papule che ulcerano, indolenti); 2) lesioni secondarie (linfonodi inguinali dolenti che suppurano); 3) lesioni terziarie (occlusione vasi linfatici, elefantiasi degli organi genitali, fistole)"
+        ]},
+        { "titolo": "Diagnosi e terapia", "punti": [
+          "Secreto vaginale/uretrale su tappeto cellulare, colorazione di Lugol per le inclusioni; anticorpi monoclonali, ELISA, PCR",
+          "Le clamidie resistono a tutti i beta-lattamici",
+          "Tracoma: tetracicline/macrolidi/fluorochinoloni; altre patologie: tetracicline (doxiciclina)"
+        ]}
+      ]
+    },
+    {
+      "id": "mycoplasma-pneumoniae",
+      "nome": "Mycoplasma pneumoniae",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Generalità Mycoplasmataceae", "punti": [
+          "Tra i batteri più piccoli (0,1–0,3 micron), passano i filtri antibatterici",
+          "Pleiomorfi, aerobi–anaerobi facoltativi",
+          "Nessuna parete cellulare (sopravvivono per il colesterolo di membrana); terreni ricchi di steroli",
+          "Colonie a uovo fritto o a mora",
+          "No colorazione di Gram → Giemsa istologico",
+          "Antibiotici di parete inefficaci; resistono anche alle rifamicine (RNA polimerasi diversa)"
+        ]},
+        { "titolo": "Caratteristiche", "punti": [
+          "Aerobio obbligato, crescita lenta (~15 gg)"
+        ]},
+        { "titolo": "Fattori di virulenza e trasmissione", "punti": [
+          "Adesine (adesina P1), emolisina (β-emolisi)",
+          "Via aerea, soprattutto 5–25 anni, stretto contatto"
+        ]},
+        { "titolo": "Polmonite atipica primaria / migrante", "punti": [
+          "Mite, tipo benigno, conseguente a sindrome simil-influenzale",
+          "Tosse secca non produttiva, sinusiti, faringiti, febbre, malessere",
+          "Complicanza: miringite bollosa (membrana timpanica)",
+          "Rari casi di interessamento SNC/SNP, miocardio, cute, pancreas"
+        ]},
+        { "titolo": "Diagnosi e terapia", "punti": [
+          "Colonia a mora su tappeto cellulare; analisi biochimica; PCR per casi urgenti",
+          "Terapia: macrolidi e fluorochinoloni"
+        ]}
+      ]
+    },
+    {
+      "id": "ureaplasma-urealyticum",
+      "nome": "Ureaplasma urealyticum",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Generalità Ureaplasma", "punti": [
+          "Un tempo non distinto dai micoplasmi",
+          "Intensa attività ureasica → terreni ricchi di urea oltre che di steroli",
+          "Colonie piccole a uovo fritto"
+        ]},
+        { "titolo": "Patologia", "punti": [
+          "Tratto urogenitale: uretriti non gonococciche, prostatiti, PID, calcolosi urinarie",
+          "Aborti, infertilità, deficienze ponderali nei neonati se non trattata"
+        ]},
+        { "titolo": "Diagnosi e terapia", "punti": [
+          "Ricerca colturale su terreni ricchi di urea",
+          "Terapia: macrolidi e tetracicline"
+        ]}
+      ]
+    },
+    {
+      "id": "mycoplasma-genitalium",
+      "nome": "Mycoplasma genitalium",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Estratto da pazienti con uretrite non gonococcica",
+          "Si pensava associato al tratto genitale ma l'infezione è aerea",
+          "Ricco di adesine"
+        ]}
+      ]
+    },
+    {
+      "id": "mycoplasma-hominis",
+      "nome": "Mycoplasma hominis",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Caratteristiche", "punti": [
+          "Isolato dal rinofaringe o dal tratto urogenitale",
+          "Causa: uretriti, prostatiti, vaginiti, pielonefriti, aborti",
+          "Colonie a uovo fritto"
+        ]}
+      ]
+    },
+    {
+      "id": "treponema-pallidum",
+      "nome": "Treponema pallidum",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Generalità Spirochetales", "punti": [
+          "Ordine con 2 famiglie: Spirochaetaceae (Treponema, Borrelia) e Leptospiraceae (Leptospira)",
+          "Molto piccoli (0,1 micron) ma lunghi, corpo spiraliforme",
+          "Aerobi/anaerobi obbligati o facoltativi",
+          "Alcuni coltivabili in vitro, altri no; osservazione in campo scuro o impregnazione argentica",
+          "Mobili grazie a fasci di endoflagelli"
+        ]},
+        { "titolo": "Caratteristiche", "punti": [
+          "0,2–0,4 x 4–18 micron; sotto il potere di risoluzione del microscopio ottico → colorazione argentica",
+          "Flagellato (4–8 flagelli), spire distanziate 1 micron, estremità appuntite",
+          "Anaerobio obbligato (microaerofilo)",
+          "Non coltivabile in vitro → inoculato nello scroto di coniglio"
+        ]},
+        { "titolo": "Costituzione antigenica e virulenza", "punti": [
+          "Cardiolipina (aptene lipidico, importante per il test di Wassermann)",
+          "Antigeni proteici specifici (endoflagelli, lipoproteine di superficie)",
+          "Non produce tossine, privo di LPS (no lipide A), ha porine e adesine"
+        ]},
+        { "titolo": "Sifilide acquisita — stadi", "punti": [
+          "1) Sifilide primaria: trasmissione sessuale; dopo 2–3 sett. papule → ulcerazioni → sifiloma primario (indurito, essudato ricco di treponemi)",
+          "2) Sifilide secondaria (cutanea): dopo 2–4 mesi, diffusione sistemica ematica; roseole/papule sulla cute, placche eritematose sulle mucose",
+          "3) Sifilide latente: quiescenza (precoce < 4 anni, trasmissibile in gravidanza; tardiva > 4 anni, asintomatica e non contagiosa)",
+          "4) Sifilide terziaria: 'gomma' (granuloma con necrosi colliquativa); neurosifilide (tabe dorsale, paralisi); sifilide cardiovascolare (aneurisma dell'aorta)"
+        ]},
+        { "titolo": "Sifilide congenita", "punti": [
+          "Trasmessa dalla madre al feto dopo 5 mesi di gravidanza",
+          "Trasmissione secondo lo stadio: stadio 1 (70–100%), latenza precoce (40%), stadio 3 (10%)",
+          "Feto: danni a fegato, milza, polmoni, SNC; malformazioni osteoarticolari visibili al 2° anno"
+        ]},
+        { "titolo": "Diagnosi diretta", "punti": [
+          "Prelievo da lesioni cutanee accessibili → microscopio ottico con contrasto di fase, impregnazione argentica o fluorescenza in campo scuro (solo se lesioni accessibili e nessuna terapia iniziata)",
+          "PCR per il DNA"
+        ]},
+        { "titolo": "Diagnosi indiretta — test specifici", "punti": [
+          "Reazione di Wassermann (fissazione del complemento con cardiolipina): provetta rossa = anticorpi presenti; provetta limpida = assenti",
+          "VDRL (Venereal Disease Research Laboratory): cardiolipina → flocculi se anticorpi presenti"
+        ]},
+        { "titolo": "Diagnosi indiretta — test non specifici e terapia", "punti": [
+          "TPI (immobilizzazione): treponemi vivi + complemento → batteri immobili (morti) se anticorpi presenti",
+          "FTA (immunofluorescenza indiretta): globulina anti-uomo con fluoresceina → batteri fluorescenti se anticorpi presenti",
+          "TPHA (emoagglutinazione indiretta): globuli rossi con treponemi assorbiti → agglutinano se anticorpi presenti",
+          "Terapia: penicillina (elezione); tetracicline e cefalosporine per allergici"
+        ]}
+      ]
+    },
+    {
+      "id": "borrelia",
+      "nome": "Borrelia",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Generalità", "punti": [
+          "Più grandi dei treponemi (osservabili), si colorano con Giemsa",
+          "Spire larghe e irregolari, 15–20 endoflagelli",
+          "Coltivabili in vitro su terreno di Kelly",
+          "Parassiti di artropodi: Ornithodorus (zecche), Pediculus (pidocchi)"
+        ]},
+        { "titolo": "Febbre ricorrente — trasmissione", "punti": [
+          "Zecche: febbre endemica (borreliosi, zoonosi); ceppi con nome geografico",
+          "Pidocchi: carattere epidemico; l'uomo è ospite e serbatoio; microlesioni da grattamento favoriscono la diffusione (pidocchio schiacciato → borrelie nella cute)"
+        ]},
+        { "titolo": "Febbre ricorrente — patogenesi e sintomi", "punti": [
+          "Borrelie antigenicamente instabili (8+ varianti); si rifugiano in fegato/milza e riemergono modificate non riconosciute dagli anticorpi → febbre ricorrente",
+          "Incubazione 2–15 gg",
+          "Febbre elevata (40 °C) e brividi per una settimana, poi apiressia 4–10 gg; fino a 8 episodi (uno per variante)",
+          "Cefalea, mialgia, diarrea, tosse, insonnia; possibili emorragie GI",
+          "Prognosi da zecca benigna; forma epidemica più grave (miocardite, emorragia cerebrale, crisi epatica)"
+        ]},
+        { "titolo": "Borreliosi di Lyme", "punti": [
+          "Agente: B. burgdorferi; veicolata da zecca Ixodes (serbatoi: roditori, cervi)",
+          "Si localizza nei linfonodi regionali → adenopatia; sviluppo in 3 stadi:",
+          "1) manifestazione cutanea (dopo 1 mese): eritema cronico migrante (ECM) + febbre",
+          "2) batteriemia (dopo 5 mesi): disturbi cardiaci, neurologici, muscoloscheletrici",
+          "3) alterazioni a SNC, cute, articolazioni (dopo 7 mesi) da citochine"
+        ]},
+        { "titolo": "Diagnosi e terapia", "punti": [
+          "Febbre ricorrente: sangue durante i rialzi febbrili, Giemsa, coltura in brodo di Kelly",
+          "Lyme: osservazione dell'ECM, test sierologici, PCR",
+          "Terapia: penicillina, macrolidi o tetracicline"
+        ]}
+      ]
+    },
+    {
+      "id": "leptospira-interrogans",
+      "nome": "Leptospira interrogans",
+      "gruppo": "gram-neg",
+      "sezioni": [
+        { "titolo": "Generalità", "punti": [
+          "Molto sottili, estremità a uncino, aerobi obbligati",
+          "Coltivabili in brodo di Kelly",
+          "Specie patogena: L. interrogans"
+        ]},
+        { "titolo": "Leptospirosi — trasmissione", "punti": [
+          "Parassita animali selvatici (roditori) o domestici (bovini, caprini, ovini, suini, equini)",
+          "Si localizza nei tubuli prossimali renali, secreta nelle urine (carnivori pH acido → sopravvive poco; erbivori meno acido → più a lungo)",
+          "Uomo: via diretta (agricoltori/veterinari, urine di animali via microlesioni), via indiretta (acqua o fango contaminati)",
+          "Zoonosi ad ampia diffusione geografica; forma sporadica o piccole epidemie"
+        ]},
+        { "titolo": "Sintomi", "punti": [
+          "Asintomatici/lievi/anitterici (90%): come un'influenza, ~1 settimana",
+          "Grave o morbo di Weil (forma itterica): febbre alta 7–10 gg, cefalea, dolori muscolari, debolezza, vomito; poi ittero, insufficienza renale, alta bilirubina, glomerulonefrite; morte per collasso cardiovascolare o blocco renale"
+        ]},
+        { "titolo": "Diagnosi, terapia, vaccino", "punti": [
+          "Osservazione in campo scuro delle leptospire in urina; coltivazione su terreno di Kelly (fino a 8 settimane); test sierologici rapidi (agglutinazione, ELISA)",
+          "Malattia molto diffusa in Piemonte → sempre da considerare",
+          "Terapia: penicillina e tetraciclina ad alte dosi, doxiciclina per l'eradicazione",
+          "Vaccino: batteri inattivati al calore, per soggetti esposti"
+        ]}
+      ]
+    }
+  ]
+}
