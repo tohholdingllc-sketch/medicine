@@ -1037,17 +1037,30 @@ body {
   }
 }
 
-/* ---------- Solo smartphone: layout piu compatto ---------- */
+/* ---------- Solo smartphone: layout piu compatto, carta protagonista ---------- */
 @media (max-width: 640px) {
+  .shell {
+    gap: 12px;
+  }
+  /* statistiche compatte: resta la padronanza (numero + barra), via la griglia */
   .stat-grid {
-    grid-template-columns: repeat(2, 1fr);
+    display: none;
+  }
+  .statsbar {
+    padding: 13px 16px;
+    gap: 10px;
+  }
+  /* header piu stretto cosi il sottotitolo non va a capo */
+  .brand-title {
+    font-size: 0.92rem;
+    letter-spacing: 0.1em;
+  }
+  .brand-sub {
+    white-space: nowrap;
   }
   .card-3d,
   .empty {
-    height: clamp(360px, 52dvh, 520px);
-  }
-  .shell {
-    gap: 13px;
+    height: clamp(380px, 56dvh, 540px);
   }
 }
 
