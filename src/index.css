@@ -25,7 +25,9 @@
   --faint: #565d6d;
   --border: rgba(20, 25, 40, 0.12);
   --border-hi: rgba(20, 25, 40, 0.22);
-  --shadow: 0 22px 46px -26px rgba(20, 30, 50, 0.24), 0 6px 18px -12px rgba(20, 30, 50, 0.14);
+  --shadow: 0 1px 2px rgba(20, 30, 50, 0.05), 0 10px 22px -12px rgba(20, 30, 50, 0.16),
+    0 34px 60px -34px rgba(50, 70, 110, 0.24);
+  --card-hi: rgba(255, 255, 255, 0.75);
 
   /* colori funzionali (verde/rosso) */
   --ok: #15803d;
@@ -65,6 +67,7 @@
   --border: rgba(255, 255, 255, 0.09);
   --border-hi: rgba(255, 255, 255, 0.17);
   --shadow: 0 30px 60px -24px rgba(0, 0, 0, 0.8), 0 12px 28px -16px rgba(0, 0, 0, 0.6);
+  --card-hi: rgba(255, 255, 255, 0.06);
 
   --ok: #4ade80;
   --ok-bg: rgba(74, 222, 128, 0.15);
@@ -403,7 +406,7 @@ body {
   overflow: hidden;
   border: 1px solid var(--border);
   background: linear-gradient(160deg, var(--panel-hi), var(--panel-solid));
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow), inset 0 1px 0 var(--card-hi);
 }
 .card-face::before {
   content: "";
@@ -430,15 +433,25 @@ body {
   gap: 22px;
   padding: 32px 28px;
   text-align: center;
+  /* alone di "colorazione di Gram" dietro il nome — come uno striscio al microscopio */
+  background: radial-gradient(
+    62% 42% at 50% 40%,
+    color-mix(in srgb, var(--accent) 14%, transparent),
+    transparent 70%
+  );
 }
 .bacterium-name {
+  position: relative;
   margin: 0;
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: 500;
-  font-size: clamp(1.9rem, 6.4vw, 3.05rem);
-  line-height: 1.08;
-  letter-spacing: -0.01em;
+  font-size: clamp(2rem, 6.6vw, 3.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  font-optical-sizing: auto;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
 }
 .tag {
   @apply inline-flex items-center;
@@ -736,21 +749,42 @@ body {
 .feedback--no {
   background: color-mix(in srgb, var(--err) 22%, transparent);
 }
-.feedback-badge {
-  display: grid;
-  place-items: center;
-  width: 78px;
-  height: 78px;
-  border-radius: 999px;
+.feedback-stamp {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  padding: 13px 22px;
+  border-radius: 15px;
+  border: 2px solid currentColor;
   background: var(--panel-solid);
   box-shadow: var(--shadow);
-  animation: badgePop 0.43s cubic-bezier(0.2, 1.35, 0.4, 1);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.92rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transform: rotate(-4deg);
+  animation: stampIn 0.43s cubic-bezier(0.2, 1.35, 0.4, 1);
 }
-.feedback--ok .feedback-badge {
+.feedback--ok .feedback-stamp {
   color: var(--ok);
 }
-.feedback--no .feedback-badge {
+.feedback--no .feedback-stamp {
   color: var(--err);
+}
+@keyframes stampIn {
+  0% {
+    transform: rotate(-4deg) scale(0.5);
+    opacity: 0;
+  }
+  45% {
+    transform: rotate(-4deg) scale(1.08);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-4deg) scale(1);
+    opacity: 1;
+  }
 }
 
 /* ---------- Footer ---------- */
@@ -1190,7 +1224,7 @@ body {
     animation: none;
     opacity: 1;
   }
-  .feedback-badge {
+  .feedback-stamp {
     animation: none;
   }
 }

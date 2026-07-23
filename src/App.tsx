@@ -258,8 +258,11 @@ export default function App() {
                         className={`feedback feedback--${feedback === 'correct' ? 'ok' : 'no'}`}
                         aria-hidden="true"
                       >
-                        <span className="feedback-badge">
-                          {feedback === 'correct' ? <Check size={34} /> : <X size={34} />}
+                        <span className="feedback-stamp">
+                          {feedback === 'correct' ? <Check size={24} /> : <X size={24} />}
+                          <span className="feedback-word">
+                            {feedback === 'correct' ? 'Lo sapevo' : 'Da rivedere'}
+                          </span>
                         </span>
                       </div>
                     )}
