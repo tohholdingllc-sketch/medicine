@@ -124,6 +124,7 @@ export function useSpacedRepetition(cards: Card[]) {
   return {
     corrente,
     boxCorrente: corrente ? stati[corrente.id]?.box ?? 1 : 1,
+    stati,
     filtro,
     setFiltro,
     rispondi,

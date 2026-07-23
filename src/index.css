@@ -430,8 +430,8 @@ body {
   @apply flex flex-col items-center justify-center;
   position: relative;
   height: 100%;
-  gap: 22px;
-  padding: 32px 28px;
+  gap: 18px;
+  padding: 30px 26px;
   text-align: center;
   /* alone di "colorazione di Gram" dietro il nome — come uno striscio al microscopio */
   background: radial-gradient(
@@ -1217,6 +1217,185 @@ body {
   }
   .punto {
     color: #111 !important;
+  }
+}
+
+/* ---------- Fronte: prompt "Parlami di" + morfologia ---------- */
+.prompt-block {
+  @apply flex flex-col items-center;
+  gap: 6px;
+}
+.card-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+.morfo-chip {
+  @apply inline-flex items-center;
+  gap: 9px;
+  padding: 6px 13px 6px 10px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--accent) 28%, transparent);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+}
+.morfo-glifo {
+  flex: none;
+}
+
+/* ---------- Progressi (statistiche) ---------- */
+.progressi {
+  @apply flex flex-col w-full;
+  max-width: 640px;
+  margin: 0 auto;
+  gap: 14px;
+}
+.prog-card {
+  @apply flex flex-col;
+  gap: 12px;
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+.prog-head {
+  @apply flex items-end justify-between;
+}
+.prog-label {
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+.prog-big {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--ok);
+}
+.prog-sub {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.prog-hint {
+  margin: -4px 0 0;
+  font-size: 0.76rem;
+  color: var(--faint);
+}
+.prog-gruppi {
+  @apply flex flex-col;
+  gap: 12px;
+}
+.prog-gruppo {
+  @apply flex flex-col;
+  gap: 6px;
+}
+.prog-gruppo-top {
+  @apply flex items-center justify-between;
+}
+.prog-gruppo-nome {
+  @apply inline-flex items-center;
+  gap: 8px;
+  font-size: 0.85rem;
+}
+.prog-gruppo-val {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.prog-gruppo-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--accent);
+  transition: width 0.5s cubic-bezier(0.2, 0.9, 0.25, 1);
+}
+.prog-distr {
+  @apply flex flex-col;
+  gap: 8px;
+}
+.prog-distr-row {
+  @apply flex items-center;
+  gap: 10px;
+}
+.prog-distr-lab {
+  flex: none;
+  width: 46px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+.prog-distr-track {
+  flex: 1;
+  height: 12px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--text) 8%, transparent);
+  overflow: hidden;
+}
+.prog-distr-fill {
+  height: 100%;
+  min-width: 3px;
+  border-radius: 999px;
+  transition: width 0.5s cubic-bezier(0.2, 0.9, 0.25, 1);
+}
+.prog-distr-n {
+  flex: none;
+  width: 22px;
+  text-align: right;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+}
+.prog-acc {
+  @apply flex items-baseline;
+  gap: 12px;
+}
+.prog-acc-det {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+.prog-mini {
+  @apply grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.prog-mini > div {
+  @apply flex flex-col;
+  gap: 3px;
+}
+.prog-mini-lab {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+.prog-mini-val {
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+/* mode switch a tutta larghezza su smartphone (3 modalità) */
+@media (max-width: 640px) {
+  .modeswitch {
+    align-self: stretch;
+  }
+  .modeswitch button {
+    flex: 1;
+    justify-content: center;
+    padding-inline: 6px;
+    gap: 5px;
   }
 }
 

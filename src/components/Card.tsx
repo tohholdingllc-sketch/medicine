@@ -1,6 +1,8 @@
 import type { Ref } from 'react'
 import { RefreshCw } from 'lucide-react'
 import type { Card as CardType } from '../types'
+import { Morfologia } from './Morfologia'
+import { etichettaMorfologia, formaDi } from '../lib/morfologia'
 
 interface Props {
   card: CardType
@@ -38,7 +40,15 @@ export function Card({ card, gruppoNome, box, flipped, onFlip, cardRef }: Props)
               {gruppoNome}
             </span>
 
-            <h2 className="bacterium-name">{card.nome}</h2>
+            <div className="prompt-block">
+              <span className="card-eyebrow">Parlami di:</span>
+              <h2 className="bacterium-name">{card.nome}</h2>
+            </div>
+
+            <span className="morfo-chip">
+              <Morfologia forma={formaDi(card.id)} className="morfo-glifo" />
+              {etichettaMorfologia(card.id)}
+            </span>
 
             <div className="level" aria-hidden="true">
               <span className="level-label">livello</span>

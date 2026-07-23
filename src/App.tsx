@@ -1,5 +1,16 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { ArrowUp, BookOpen, Check, FlaskConical, Layers, Moon, RotateCcw, Sun, X } from 'lucide-react'
+import {
+  Activity,
+  ArrowUp,
+  BookOpen,
+  Check,
+  FlaskConical,
+  Layers,
+  Moon,
+  RotateCcw,
+  Sun,
+  X,
+} from 'lucide-react'
 import rawData from './data/flashcards-data.json'
 import type { Dataset, Gruppo, GruppoId } from './types'
 import { useTheme } from './hooks/useTheme'
@@ -10,6 +21,7 @@ import { StatsBar } from './components/StatsBar'
 import { FilterBar } from './components/FilterBar'
 import { ShortcutsHint } from './components/ShortcutsHint'
 import { Lezioni } from './components/Lezioni'
+import { Statistiche } from './components/Statistiche'
 
 const dataset = rawData as unknown as Dataset
 
@@ -22,13 +34,13 @@ const FEEDBACK_MS = 430
 
 export default function App() {
   const { theme, toggle } = useTheme()
-  const { corrente, boxCorrente, filtro, setFiltro, rispondi, salta, reset, stats } =
+  const { corrente, boxCorrente, stati, filtro, setFiltro, rispondi, salta, reset, stats } =
     useSpacedRepetition(dataset.cards)
 
   const [flipped, setFlipped] = useState(false)
   const [feedback, setFeedback] = useState<Esito | null>(null)
   const [liveMsg, setLiveMsg] = useState('')
-  const [modalita, setModalita] = useState<'ripasso' | 'lezioni'>('ripasso')
+  const [modalita, setModalita] = useState<'ripasso' | 'lezioni' | 'progressi'>('ripasso')
 
   const answering = useRef(false)
   const timerRef = useRef<number | null>(null)
@@ -217,11 +229,21 @@ export default function App() {
           >
             <BookOpen size={16} aria-hidden="true" /> Lezioni
           </button>
+          <button
+            type="button"
+            className={modalita === 'progressi' ? 'is-active' : ''}
+            aria-pressed={modalita === 'progressi'}
+            onClick={() => setModalita('progressi')}
+          >
+            <Activity size={16} aria-hidden="true" /> Progressi
+          </button>
         </div>
 
-        <div className="rise" style={{ animationDelay: '120ms' }}>
-          <FilterBar gruppi={dataset.gruppi} filtro={filtro} onChange={setFiltro} />
-        </div>
+        {modalita !== 'progressi' && (
+          <div className="rise" style={{ animationDelay: '120ms' }}>
+            <FilterBar gruppi={dataset.gruppi} filtro={filtro} onChange={setFiltro} />
+          </div>
+        )}
 
         {modalita === 'ripasso' ? (
           <>
@@ -280,9 +302,22 @@ export default function App() {
               />
             </main>
           </>
-        ) : (
+        ) : modalita === 'lezioni' ? (
           <div className="rise" style={{ animationDelay: '170ms' }}>
             <Lezioni cards={cardsFiltrate} gruppi={dataset.gruppi} />
+          </div>
+        ) : (
+          <div className="rise" style={{ animationDelay: '170ms' }}>
+            <Statistiche
+              cards={dataset.cards}
+              gruppi={dataset.gruppi}
+              stati={stati}
+              sessione={{
+                viste: stats.vistiSessione,
+                sapute: stats.correttiSessione,
+                sbagliate: stats.sbagliatiSessione,
+              }}
+            />
           </div>
         )}
 
