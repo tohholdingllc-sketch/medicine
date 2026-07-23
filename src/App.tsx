@@ -34,7 +34,7 @@ export default function App() {
   const timerRef = useRef<number | null>(null)
   const focusNext = useRef(false)
   const lastEsito = useRef<Esito | null>(null)
-  const flipBtnRef = useRef<HTMLButtonElement>(null)
+  const cardRef = useRef<HTMLDivElement>(null)
 
   /** Annulla un eventuale timer di feedback pendente e sblocca l'input. */
   const cancellaTimer = useCallback(() => {
@@ -55,7 +55,7 @@ export default function App() {
     setLiveMsg(`${prefisso}${corrente.nome}, ${GRUPPI_BY_ID[corrente.gruppo]?.nome ?? ''}`)
     if (focusNext.current) {
       focusNext.current = false
-      flipBtnRef.current?.focus({ preventScroll: true })
+      cardRef.current?.focus({ preventScroll: true })
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [corrente?.id])
@@ -117,12 +117,12 @@ export default function App() {
       if (e.defaultPrevented || e.metaKey || e.ctrlKey || e.altKey) return
       if (modalita !== 'ripasso') return // in Lezioni la tastiera resta libera (scroll)
       const target = e.target as HTMLElement | null
-      const suControllo = !!target?.closest('button, a, input, select, textarea')
+      // Non rubare i tasti quando il focus è su un controllo interattivo
+      // (filtri, toggle, ecc.): evita risposte/skip accidentali da tastiera.
+      if (target?.closest('button, a, input, select, textarea')) return
       switch (e.key) {
         case ' ':
         case 'Enter':
-          // Se il focus è su un controllo, lascia agire quello (non rubare il tasto).
-          if (suControllo) return
           e.preventDefault()
           handleFlip()
           break
@@ -229,7 +229,7 @@ export default function App() {
               <StatsBar stats={stats} mazzoNome={mazzoNome} />
             </div>
 
-            <main className="stage rise" style={{ animationDelay: '220ms' }}>
+            <main className="stage">
               <div className="stage-top">
                 <button
                   type="button"
@@ -251,7 +251,7 @@ export default function App() {
                       box={boxCorrente}
                       flipped={flipped}
                       onFlip={handleFlip}
-                      flipRef={flipBtnRef}
+                      cardRef={cardRef}
                     />
                     {feedback && (
                       <div
@@ -271,13 +271,10 @@ export default function App() {
 
               <Controls
                 flipped={flipped}
+                onFlip={handleFlip}
                 onWrong={() => handleAnswer('wrong')}
                 onCorrect={() => handleAnswer('correct')}
               />
-
-              <p className={`hint-flip${flipped ? ' is-hidden' : ''}`}>
-                Gira la carta per abilitare le risposte
-              </p>
             </main>
           </>
         ) : (

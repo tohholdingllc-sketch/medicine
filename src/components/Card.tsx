@@ -9,22 +9,27 @@ interface Props {
   box: number
   flipped: boolean
   onFlip: () => void
-  /** Ref al pulsante di flip del fronte, per riportare il focus dopo l'avanzamento. */
-  flipRef?: Ref<HTMLButtonElement>
+  /**
+   * Ref al contenitore 3D (div, non un pulsante): dopo l'avanzamento vi si
+   * riporta il focus per continuità da tastiera, SENZA che le scorciatoie
+   * globali vengano bloccate dalla guardia "focus su un controllo".
+   */
+  cardRef?: Ref<HTMLDivElement>
 }
 
 /**
  * Flashcard con flip 3D reale.
  * Fronte = nome del batterio; retro = sezioni scrollabili.
- *
- * Accessibilità: la faccia non visibile è marcata `aria-hidden` e i suoi
- * controlli hanno `tabIndex=-1`, così lo screen reader e il Tab non
- * "vedono" mai il retro quando si è sul fronte (e viceversa).
+ * La faccia non visibile è `aria-hidden` e i suoi controlli hanno tabIndex -1.
  */
-export function Card({ card, gruppoNome, box, flipped, onFlip, flipRef }: Props) {
+export function Card({ card, gruppoNome, box, flipped, onFlip, cardRef }: Props) {
   return (
     <div className={`card-scene accent-${card.gruppo}`}>
-      <div className={`card-3d${flipped ? ' is-flipped' : ''}`}>
+      <div
+        ref={cardRef}
+        tabIndex={-1}
+        className={`card-3d${flipped ? ' is-flipped' : ''}`}
+      >
         {/* ---------- FRONTE ---------- */}
         <div className="card-face card-face--front" onClick={onFlip} aria-hidden={flipped}>
           <div className="card-front-inner">
@@ -46,7 +51,6 @@ export function Card({ card, gruppoNome, box, flipped, onFlip, flipRef }: Props)
 
             <button
               type="button"
-              ref={flipRef}
               className="flip-btn"
               tabIndex={flipped ? -1 : 0}
               onClick={(e) => {

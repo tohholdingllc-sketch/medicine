@@ -22,7 +22,7 @@
   --panel-hi: #fbfbf9;
   --text: #16181d;
   --muted: #52596a;
-  --faint: #626977;
+  --faint: #565d6d;
   --border: rgba(20, 25, 40, 0.12);
   --border-hi: rgba(20, 25, 40, 0.22);
   --shadow: 0 22px 46px -26px rgba(20, 30, 50, 0.24), 0 6px 18px -12px rgba(20, 30, 50, 0.14);
@@ -107,6 +107,9 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-sans);
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -138,6 +141,7 @@ body {
   min-height: 100dvh;
   isolation: isolate;
   overflow-x: clip;
+  transition: --accent 0.6s ease, --accent-bg 0.6s ease;
 }
 .app::before {
   /* griglia a puntini: quaderno / campo microscopio */
@@ -164,7 +168,9 @@ body {
   @apply flex flex-col w-full;
   max-width: 640px;
   margin: 0 auto;
-  padding: clamp(16px, 3vw, 28px) clamp(16px, 4vw, 24px) 28px;
+  padding-top: max(clamp(16px, 3vw, 28px), env(safe-area-inset-top));
+  padding-inline: max(clamp(16px, 4vw, 24px), env(safe-area-inset-left));
+  padding-bottom: max(28px, env(safe-area-inset-bottom));
   gap: 16px;
   flex: 1;
 }
@@ -383,6 +389,11 @@ body {
 .card-3d.is-flipped {
   transform: rotateY(180deg);
 }
+/* focus solo programmatico (tabIndex -1): niente anello attorno alla carta */
+.card-3d:focus,
+.card-3d:focus-visible {
+  outline: none;
+}
 .card-face {
   position: absolute;
   inset: 0;
@@ -555,6 +566,7 @@ body {
   scrollbar-width: thin;
   scrollbar-color: var(--border-hi) transparent;
   overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
 }
 .card-back-scroll::-webkit-scrollbar {
   width: 8px;
@@ -596,6 +608,7 @@ body {
 .punto {
   position: relative;
   padding-left: 17px;
+  overflow-wrap: anywhere;
   font-size: 0.9rem;
   line-height: 1.5;
   color: color-mix(in srgb, var(--text) 92%, transparent);
@@ -657,6 +670,18 @@ body {
 }
 .answer-btn--ok:not(:disabled):hover {
   box-shadow: 0 12px 26px -14px var(--ok);
+}
+/* CTA "Gira la carta" (pre-flip): tinta del gruppo corrente */
+.controls--single {
+  grid-template-columns: 1fr;
+}
+.answer-btn--flip {
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 40%, transparent);
+  background: var(--accent-bg);
+}
+.answer-btn--flip:hover {
+  box-shadow: 0 12px 26px -14px var(--accent);
 }
 .kbd {
   font-family: var(--font-mono);
@@ -880,42 +905,271 @@ body {
   color: var(--faint);
 }
 .lezione {
-  @apply flex flex-col;
-  gap: 14px;
-  padding: 20px 22px;
   border: 1px solid var(--border);
   border-left: 3px solid var(--accent);
   border-radius: 14px;
   background: var(--panel);
-  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.lezione-head-wrap {
+  margin: 0;
+  font-weight: inherit;
+}
+.lezione-head {
+  @apply flex items-center w-full;
+  gap: 12px;
+  padding: 15px 18px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text);
+}
+.lezione-chevron {
+  flex: none;
+  color: var(--accent);
+  transition: transform 0.2s ease;
+}
+.lezione.is-open .lezione-chevron {
+  transform: rotate(180deg);
 }
 .lezione-nome {
+  flex: 1;
+  min-width: 0;
   margin: 0;
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: 500;
-  font-size: 1.4rem;
-  line-height: 1.14;
+  font-size: 1.16rem;
+  line-height: 1.15;
+}
+.lezione-nsez {
+  flex: none;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--faint);
+  background: color-mix(in srgb, var(--text) 6%, transparent);
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+.lezione-body {
+  display: none;
+  flex-direction: column;
+  gap: 14px;
+  padding: 2px 18px 18px;
+}
+.lezione.is-open .lezione-body {
+  display: flex;
 }
 
-/* ---------- Responsive ---------- */
-@media (max-width: 560px) {
-  .shortcuts {
+/* ---------- Touch: smartphone + iPad (target primario) ---------- */
+/* i pulsanti di risposta diventano una barra fissa, sempre a portata di pollice */
+@media (max-width: 1024px) {
+  .shortcuts,
+  .footer {
     display: none;
   }
+  .controls {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    max-width: none;
+    margin: 0;
+    padding: 10px max(16px, env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom))
+      max(16px, env(safe-area-inset-left));
+    background: color-mix(in srgb, var(--bg) 86%, transparent);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--border);
+  }
+  .stage {
+    padding-bottom: calc(96px + env(safe-area-inset-bottom));
+  }
+  /* target touch >= 44px (linee guida Apple/WCAG) */
+  .modeswitch button,
+  .filter-pill,
+  .skip-btn {
+    min-height: 44px;
+  }
+  .icon-btn,
+  .flip-btn-back {
+    width: 44px;
+    height: 44px;
+  }
+  .search-clear {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* ---------- Solo smartphone: layout piu compatto ---------- */
+@media (max-width: 640px) {
   .stat-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .card-3d,
+  .empty {
+    height: clamp(360px, 52dvh, 520px);
+  }
+  .shell {
+    gap: 13px;
   }
 }
 
 /* viewport bassi / landscape su mobile: comprime la carta così i pulsanti restano visibili */
 @media (max-height: 600px) {
+  .statsbar {
+    display: none;
+  }
   .card-3d,
   .empty {
-    height: clamp(260px, 68dvh, 440px);
+    height: clamp(240px, 66dvh, 420px);
   }
   .shell {
-    gap: 12px;
+    gap: 10px;
+  }
+}
+
+/* ---------- Lezioni: barra ricerca + stampa ---------- */
+.lezioni-toolbar {
+  @apply flex items-center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.search {
+  @apply inline-flex items-center;
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+  gap: 8px;
+  height: 46px;
+  padding: 0 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--panel-solid);
+}
+.search:focus-within {
+  border-color: color-mix(in srgb, var(--ok) 55%, transparent);
+}
+.search-icon {
+  color: var(--faint);
+  flex: none;
+}
+.search-input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 16px; /* >= 16px: evita lo zoom automatico su iOS al focus */
+  outline: none;
+}
+.search-input::placeholder {
+  color: var(--faint);
+}
+.search-clear {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: color-mix(in srgb, var(--text) 8%, transparent);
+  color: var(--muted);
+}
+.tool-btn {
+  @apply inline-flex items-center;
+  gap: 8px;
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--panel-solid);
+  color: var(--muted);
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  transition: color 0.16s, border-color 0.16s;
+}
+.tool-btn:hover {
+  color: var(--text);
+  border-color: var(--border-hi);
+}
+.lezioni-empty {
+  margin: 0;
+  padding: 26px;
+  text-align: center;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  border: 1px dashed var(--border-hi);
+  border-radius: 14px;
+}
+
+/* ---------- Transizione morbida dell'accento (glow del gruppo) ---------- */
+@property --accent {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #7c3aed;
+}
+@property --accent-bg {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: rgba(124, 58, 237, 0.1);
+}
+
+/* ---------- Stampa / salva PDF (dalla modalità Lezioni) ---------- */
+@media print {
+  body {
+    background: #fff;
+  }
+  .app::before,
+  .app::after {
+    display: none !important;
+  }
+  .header,
+  .modeswitch,
+  .filterbar,
+  .footer,
+  .stage,
+  .lezioni-toolbar,
+  .lezione-chevron,
+  .lezione-nsez,
+  .sr-only {
+    display: none !important;
+  }
+  .shell {
+    max-width: none;
+    padding: 0;
+  }
+  .lezioni {
+    max-width: none;
+    gap: 14px;
+  }
+  .lezione {
+    border: 1px solid #cfcfcf;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  /* in stampa espandi tutte le voci, anche quelle chiuse a schermo */
+  .lezione-body {
+    display: flex !important;
+  }
+  .lezione-head {
+    padding-bottom: 4px;
+  }
+  .lezioni-gruppo-titolo,
+  .lezione-nome,
+  .sezione-titolo {
+    color: #000 !important;
+  }
+  .punto {
+    color: #111 !important;
   }
 }
 
